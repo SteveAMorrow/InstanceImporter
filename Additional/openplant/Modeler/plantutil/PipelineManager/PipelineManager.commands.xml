@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<KeyinTree xmlns="http://www.bentley.com/schemas/1.0/MicroStation/AddIn/KeyinTree.xsd">
+    <RootKeyinTable ID="root">
+        <Keyword SubtableRef="PipelineRootKey_list" CommandClass="MacroCommand" CommandWord="PipelineManager"> <Options Required="true"/> </Keyword>
+        <Keyword SubtableRef="OpenPlantModlerRootKey_list" CommandClass="MacroCommand" CommandWord="OpenPlantModeler"> <Options Required="true"/> </Keyword>
+    </RootKeyinTable>
+
+    <SubKeyinTables>
+        <KeyinTable ID="PipelineRootKey_list">
+            <Keyword CommandWord="Show" />
+            <Keyword CommandWord="ShowVersion2" />
+            <Keyword CommandWord="ReplaceComponents" />
+            <Keyword CommandWord="CheckConnectivity" />
+            <Keyword CommandWord="JointAssocDlg" />
+            <Keyword CommandWord="MaximizeManager" />
+            <Keyword CommandWord="MaximizeHvacORTrayManager" />
+        </KeyinTable>
+        <KeyinTable ID="OpenPlantModlerRootKey_list">
+            <Keyword CommandWord="Import" />
+            <Keyword CommandWord="ImportExcel" />
+            <Keyword CommandWord="RSSFeed" />
+            <Keyword CommandWord="OpenPlantSight" />
+            <Keyword CommandWord="OpenProjectPortal" />
+            <Keyword CommandWord="ProjectPortal" />
+        </KeyinTable>
+    </SubKeyinTables>
+
+    <KeyinHandlers>
+        <KeyinHandler Keyin="PipelineManager Show" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.ShowPipelineManager"/>
+        <KeyinHandler Keyin="PipelineManager ShowVersion2" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.ShowPipelineManager2"/>
+        <KeyinHandler Keyin="PipelineManager CheckConnectivity" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.CheckConnectivity"/>
+        <KeyinHandler Keyin="PipelineManager ReplaceComponents" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.ReplaceComponents"/>
+        <KeyinHandler Keyin="PipelineManager JointAssocDlg" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.ShowJointAssocDlg"/>
+        <KeyinHandler Keyin="OpenPlantModeler Import" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.Import"/>
+        <KeyinHandler Keyin="OpenPlantModeler ImportExcel" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.ImportExcel"/>
+        <KeyinHandler Keyin="OpenPlantModeler RSSFeed" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.RSSFeed"/>
+        <KeyinHandler Keyin="OpenPlantModeler OpenPlantSight" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.OpenPlantSight"/>
+        <KeyinHandler Keyin="OpenPlantModeler OpenProjectPortal" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.OpenProjectPortal"/>
+        <KeyinHandler Keyin="OpenPlantModeler ProjectPortal" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.OpenProjectPortal"/>
+        <KeyinHandler Keyin="PipelineManager MaximizeManager" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.MaximizeManager"/>
+        <KeyinHandler Keyin="PipelineManager MaximizeHvacORTrayManager" Function="Bentley.Plant.PipelineManager.PhysicalPipelineManager.MaximizeHvacORTrayManager"/>
+    </KeyinHandlers>
+</KeyinTree>

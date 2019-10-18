@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Transkit>
+    <SatelliteAssembly DllName="Bentley.Plant.InstanceImporter" DeliverEnglish="False" RightsCompliant="False">
+        <ResxFile ResourceName="Bentley.Plant.InstanceImporter.Resources.ResourceMessages" FileName="Resources\ResourceMessages.resx"/>    
+    </SatelliteAssembly>
+</Transkit>

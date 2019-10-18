@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- This conditional section was added to allow opening the project directly from within the shell and
+         all locations are set relative to Outroot if the BB varialble are not defined.  -->
+  <Choose>
+    <When Condition=" '$(PlantUtilBuildDir)' == '' ">
+      <PropertyGroup>
+        <OutputPath>$(outroot)Winx64\Build\plantutil\$(MSBuildProjectName)</OutputPath>
+        <IntermediateOutputPath>$(outroot)Winx64\Build\plantutil\$(MSBuildProjectName)</IntermediateOutputPath>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <OutputPath>$(PlantUtilBuildDir)$(MSBuildProjectName)</OutputPath>
+        <IntermediateOutputPath>$(PlantUtilBuildDir)$(MSBuildProjectName)</IntermediateOutputPath>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  <Choose>
+    <When Condition=" '$(ContextSubPartsAssembliesDir)' == '' ">
+      <PropertyGroup>
+        <ReferencePath>$(outroot)Winx64\BuildContexts\plantutil\SubParts\Assemblies\</ReferencePath>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <ReferencePath>$(ContextSubPartsAssembliesDir)</ReferencePath>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  <Choose>
+    <When Condition=" '$(TargetFrameworkVersion)' == '' ">
+      <PropertyGroup>
+        <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <TargetFrameworkVersion>$(TargetFrameworkVersion)</TargetFrameworkVersion>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BD2E0DB-0709-403A-AE58-B9CA8EDC1BDC}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bentley.Plant.PipelineManager</RootNamespace>
+    <WarningLevel>4</WarningLevel>
+    <SignAssembly>true</SignAssembly>
+    <ApplyStrongNameSignaturePostLink>true</ApplyStrongNameSignaturePostLink>
+    <AlwaysCompileMarkupFilesInSeparateDomain>true</AlwaysCompileMarkupFilesInSeparateDomain>
+    <NoWarn>1607</NoWarn>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE;CSC_VERSION_4000</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1607</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>$(SrcRoot)openplant/Modeler/opm/privmki/BentleySecurityTeam.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>$(OPMPerformCodeAnalysis)</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineConstants>TRACE;CSC_VERSION_4000</DefineConstants>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1607</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE;CSC_VERSION_4000</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1607</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>TRACE;CSC_VERSION_4000</DefineConstants>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1607</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyName>Bentley.Plant.PipelineManager</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bentley.Building.Mechanical.Components.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.DgnPlatformNET.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.GeometryNET.Structs.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.logging-2.0.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="bentley.plant.specgridselection.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="bentley.plant.InstanceImporter.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BrightIdeasSoftware.ObjectListView.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Bentley.OpenPlant.Modeler.Api.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ustation.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.UI.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.PropertyManager.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.Platform.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.EC.Controls3.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.EC.Persistence3.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.ECObjects3.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.ECSystem3.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.General.1.0.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.MicroStation.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.DGNECPlugin.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.MicroStation.Interfaces.1.0.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.MicroStation.WinForms.Docking.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.Windowing.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.Plant.Globalization.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.Plant.SpecReader.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="C1.Common.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.Plant.Utilities.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OPMCommon.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="bentley.interop.microstationdgn.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.ApplicationFramework.Interfaces.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.OpenPlant3D.Stress.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.Plant.CommonTools.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.Connect.Client.API.dll">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Bentley.Connect.Client.Service.Interface.dll">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DlgAssignSpoolId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgAssignSpoolId.Designer.cs">
+      <DependentUpon>DlgAssignSpoolId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgComponentSelectionFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgComponentSelectionFilter.Designer.cs">
+      <DependentUpon>DlgComponentSelectionFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgConnetivtyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgConnetivtyReport.Designer.cs">
+      <DependentUpon>DlgConnetivtyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgGetInsulationOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgGetInsulationOptions.Designer.cs">
+      <DependentUpon>DlgGetInsulationOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgPipelineManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgPipelineManager.Designer.cs">
+      <DependentUpon>DlgPipelineManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgReplaceComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgReplaceComponent.Designer.cs">
+      <DependentUpon>DlgReplaceComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgSelectInstance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgSelectInstance.Designer.cs">
+      <DependentUpon>DlgSelectInstance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgSpecValidationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgSpecValidationReport.Designer.cs">
+      <DependentUpon>DlgSpecValidationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ECXMLExport.cs" />
+    <Compile Include="InstanceImport.cs" />
+    <Compile Include="IsosheetManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsosheetManager.Designer.cs">
+      <DependentUpon>IsosheetManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JointAssociationsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JointAssociationsDlg.designer.cs">
+      <DependentUpon>JointAssociationsDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizableStrings.Designer.cs">
+      <DependentUpon>LocalizableStrings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LogConnectivityReport.cs" />
+    <Compile Include="OPIMProcessor.cs" />
+    <Compile Include="PhysicalPipelineManager.cs" />
+    <Compile Include="PipelineCacheData.cs" />
+    <Compile Include="PipelineManager2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PipelineManager2.Designer.cs">
+      <DependentUpon>PipelineManager2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PipelineManagerMode.cs" />
+    <Compile Include="PipelineUtilities.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DlgAssignSpoolId.resx">
+      <DependentUpon>DlgAssignSpoolId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgComponentSelectionFilter.resx">
+      <DependentUpon>DlgComponentSelectionFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgConnetivtyReport.resx">
+      <DependentUpon>DlgConnetivtyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgGetInsulationOptions.resx">
+      <DependentUpon>DlgGetInsulationOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgPipelineManager.resx">
+      <DependentUpon>DlgPipelineManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgReplaceComponent.resx">
+      <DependentUpon>DlgReplaceComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgSelectInstance.resx">
+      <DependentUpon>DlgSelectInstance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgSpecValidationReport.resx">
+      <DependentUpon>DlgSpecValidationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsosheetManager.resx">
+      <DependentUpon>IsosheetManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JointAssociationsDlg.resx">
+      <DependentUpon>JointAssociationsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizableStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizableStrings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PipelineManager2.resx">
+      <DependentUpon>PipelineManager2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PipelineManager.commands.xml">
+      <LogicalName>CommandTable.xml</LogicalName>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ts_ShowAll.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ts_showAllComponents.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ts_ShowReferencedPipelines.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btnDropDown_PipelineDisplayOptions.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btnDropDown_ComponentDisplayOptions.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ts_showComponentsForSelectedPipelines.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_CreateNewPipline.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_DeleteSelectedPipelines.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_EditSelectedPipelines.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_EditInsulation.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_ConnectivityChecker.Image.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_ConnectivityChecker.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ts_DonotShowReferencedOut.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_ChangeSpecChangeSize.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_ValidateSpec.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_AssignSpoolId.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_ClearSpoolIds.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_IsosheetManager.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_ModifyPipeBends.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_ReplaceComponents.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_MoveComponentsToOtherPipeline.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_ExportStress.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_ShowHideComponents.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btnDropDoown_Spools.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_SpoolManager.Image.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_RegenSpools.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_SpoolManager.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_JointAssocDlg.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_AutoGenerateIsosheet.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_GenIso.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_UncheckAllComponents.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_CheckAllComponents.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_DeselectComponents.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_InvertSelection.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_SelectAllComponents.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Trayline_CheckConnectivity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Trayline_Create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Trayline_Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Trayline_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Trayline_Generate_Segments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Trayline_Move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\HVAC_Move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\HVAC_Create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\HVAC_Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\HVAC_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\HVAC_Edit_Insulation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\HVAC_CheckConnectivity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ts_SortByConnectivity.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ts_ShowComponentsInSelectedIsoSheetOnly.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ts_UnassignedOnly.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_SelectConnectedComponents.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_EditIsoSheet.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_CreateANewIsoSheet.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_DeleteIsosheet.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\btn_MoveComponentToIsoSheet.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_SelectionPrompt.Image.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

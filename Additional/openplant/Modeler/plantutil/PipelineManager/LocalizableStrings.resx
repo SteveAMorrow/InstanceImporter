@@ -1,0 +1,1435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AllErrorFixed" xml:space="preserve">
+    <value>All disconnects fixed successfully</value>
+  </data>
+  <data name="AllIsGoodDialogWillClose" xml:space="preserve">
+    <value>All components analysed and verified, no inconsistency found between component and spec data. Spec Validation will now close.</value>
+  </data>
+  <data name="AutoSegmentGeneration" xml:space="preserve">
+    <value>Auto-Segment Generation</value>
+  </data>
+  <data name="CannotReplaceComponent" xml:space="preserve">
+    <value>Cannot Replace Component</value>
+  </data>
+  <data name="CannotReplaceRefOutComponents" xml:space="preserve">
+    <value>Cannot replace a referenced out or read-only component. Try checking out the component from OpenPlant Server and try again.</value>
+  </data>
+  <data name="ChangeSpecChangeSize" xml:space="preserve">
+    <value>Change Spec / Change Size</value>
+  </data>
+  <data name="ChangeSpecChangeSizeForComp" xml:space="preserve">
+    <value>ChangeSpec/ChangeSize for Component(s)</value>
+  </data>
+  <data name="CloseOpenEndsDesc" xml:space="preserve">
+    <value>The open end of the components are very close to each other. You may need to review the ends.</value>
+  </data>
+  <data name="ComponentsAlreadyInIso" xml:space="preserve">
+    <value>Some of the selected components are already in an Iso-sheet. You cannot create a new Iso-Sheet for these components</value>
+  </data>
+  <data name="ComponentsAlreadyInIsoTitle" xml:space="preserve">
+    <value>Components Already in Iso-sheet</value>
+  </data>
+  <data name="ComponentsAreNotCompatible" xml:space="preserve">
+    <value>The selected replacing component may create disconnects in the model.</value>
+  </data>
+  <data name="ComponentSelectedAll" xml:space="preserve">
+    <value>Showing all component(s) in pipeline (sorted connectivity wise) ; Pipeline has {0} component(s) (Associated components not shown); Selected {1}.</value>
+  </data>
+  <data name="ComponentSelectedIsoSheet" xml:space="preserve">
+    <value>Showing all component(s) in selected Iso-Sheet only. Iso-Sheet has {0} component(s); Pipeline has {1} component(s) (Associated components not shown); Selected {2}.</value>
+  </data>
+  <data name="ComponentSelectedUnassigned" xml:space="preserve">
+    <value>Showing component(s) not assigned to any Iso-Sheet. Pipeline has {0} component(s) (Associated components not shown); Selected {1}.</value>
+  </data>
+  <data name="ComponentsFoundForDeleteLine" xml:space="preserve">
+    <value>Components found on selected {0}, please delete the components or move them to another {1} before performing a delete.</value>
+  </data>
+  <data name="ComponentsInTrayline" xml:space="preserve">
+    <value>Showing all component(s) in trayline; Trayline has {0} component(s); Selected {1}</value>
+  </data>
+  <data name="ConnErrorsInPipeline" xml:space="preserve">
+    <value>Cannot export components for stress analysis. There are connectivity errors in the selected Pipeline(s), please run Connectivity Checker to review the errors.</value>
+  </data>
+  <data name="ConnErrorsInPipelineTitle" xml:space="preserve">
+    <value>Connectivity Errors in Line</value>
+  </data>
+  <data name="ConnErrorsInSelComp" xml:space="preserve">
+    <value>Disconnects found in the components, please run Connectivity Checker to review the errors.</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create </value>
+  </data>
+  <data name="CreateIso" xml:space="preserve">
+    <value>Create IsoSheet for selected components</value>
+  </data>
+  <data name="CreateIsoSheet" xml:space="preserve">
+    <value>create Iso-Sheet</value>
+  </data>
+  <data name="DataMismatch" xml:space="preserve">
+    <value>Some properties in spec do not match in component</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete </value>
+  </data>
+  <data name="DeletePipelineQ" xml:space="preserve">
+    <value>Are you sure you want to delete: {0}?</value>
+  </data>
+  <data name="DeleteTrayline" xml:space="preserve">
+    <value>Delete selected Trayline</value>
+  </data>
+  <data name="DescCCNoError1" xml:space="preserve">
+    <value>No disconnect found.</value>
+  </data>
+  <data name="DescCCNoErrorTapConnection1" xml:space="preserve">
+    <value>No disconnect found: components are connected through a tap connection.</value>
+  </data>
+  <data name="DescContinuationDetected1" xml:space="preserve">
+    <value>Continuation Detected: Component may be connected to another line.</value>
+  </data>
+  <data name="DescDataMismatch1" xml:space="preserve">
+    <value>Some of the properties in component do not match in spec. Mismatched fields:</value>
+  </data>
+  <data name="DescDataMismatch2" xml:space="preserve">
+    <value>Value in component: '{0}'</value>
+  </data>
+  <data name="DescDataMismatch3" xml:space="preserve">
+    <value>Value in spec: '{0}'</value>
+  </data>
+  <data name="DescFastenersNotInPlace1" xml:space="preserve">
+    <value>Fastener(s) not in place.</value>
+  </data>
+  <data name="DescInvalidJoint1" xml:space="preserve">
+    <value>Invalid joint exist between the components</value>
+  </data>
+  <data name="DescJointFoundNotPhysicallyClose1" xml:space="preserve">
+    <value>Disconnect: Related joint  (with no joint type)  found but components are physically disconnected.</value>
+  </data>
+  <data name="DescJointFoundNotPhysicallyClose2" xml:space="preserve">
+    <value>Disconnect: Related joint with  {0}  type  found but components are physically disconnected.</value>
+  </data>
+  <data name="DescKinkInTheConnection1" xml:space="preserve">
+    <value>Components are not alligned.</value>
+  </data>
+  <data name="DescMissingAssociatedJointItems" xml:space="preserve">
+    <value>Missing associated joint items</value>
+  </data>
+  <data name="DescMissingFasteners1" xml:space="preserve">
+    <value>Missing fastener(s).</value>
+  </data>
+  <data name="DescMultipleSpecIdsFound1" xml:space="preserve">
+    <value>Multiple components with SPECID {0} found in spec {1}</value>
+  </data>
+  <data name="DescNoError1" xml:space="preserve">
+    <value>No error found: component and spec data matches</value>
+  </data>
+  <data name="DescNoSpecSet1" xml:space="preserve">
+    <value>Spec is null or not set in the component</value>
+  </data>
+  <data name="DescOpenEnd1" xml:space="preserve">
+    <value>Open ended component.</value>
+  </data>
+  <data name="DescOpenTapEnd1" xml:space="preserve">
+    <value>Open tap on {0}.</value>
+  </data>
+  <data name="DescPhysicallyCloseNoJointFound1" xml:space="preserve">
+    <value>Disconnect: Components are physically connected but no related joint found.</value>
+  </data>
+  <data name="DescPipelineComponentSpecMismatch1" xml:space="preserve">
+    <value>Component has a different spec than line.</value>
+  </data>
+  <data name="DescPipelineComponentSpecMismatch2" xml:space="preserve">
+    <value>Line Spec: {0}</value>
+  </data>
+  <data name="DescPipelineComponentSpecMismatch3" xml:space="preserve">
+    <value>Component Spec: {0}</value>
+  </data>
+  <data name="DescSpecIdNotFoundInSpec1" xml:space="preserve">
+    <value>Component SPECID {0} not found in spec {1}</value>
+  </data>
+  <data name="DescSpecIdNotSetInComponent1" xml:space="preserve">
+    <value>SPECID is null or not set in the component</value>
+  </data>
+  <data name="DescTapConnectionIsNotComponent1" xml:space="preserve">
+    <value>Tap connection is not on the component</value>
+  </data>
+  <data name="DesignFileModified" xml:space="preserve">
+    <value>Design file has been modified. Reference to the components may have changed. To prevent any unexpected results 'Replace Component' will now close</value>
+  </data>
+  <data name="DesignFileModifiedTitle" xml:space="preserve">
+    <value>Design File Modified</value>
+  </data>
+  <data name="Disconnects" xml:space="preserve">
+    <value>Disconnects: </value>
+  </data>
+  <data name="DisconnectsFound" xml:space="preserve">
+    <value>Disconnects Found</value>
+  </data>
+  <data name="DisconnectsInComponentsIso" xml:space="preserve">
+    <value>Disconnects have been found in the selected components. Creating an Iso-Sheet for these components may result in an error in Isometrics Manager.</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit </value>
+  </data>
+  <data name="EditInsulation" xml:space="preserve">
+    <value>Edit Insulation</value>
+  </data>
+  <data name="EditIsoSheet" xml:space="preserve">
+    <value>Edit selected Iso Sheet</value>
+  </data>
+  <data name="EditTrayline" xml:space="preserve">
+    <value>Edit selected Trayline</value>
+  </data>
+  <data name="EmptyPipeline" xml:space="preserve">
+    <value>No associated components found on selected Pipeline(s).</value>
+  </data>
+  <data name="FailedToConnectToSpec" xml:space="preserve">
+    <value>Failed to connect to spec {0}</value>
+  </data>
+  <data name="FailedToReplace" xml:space="preserve">
+    <value>[Error] Failed to replace {0} to {1)</value>
+  </data>
+  <data name="FailedToReplaceAllComponentsNoData" xml:space="preserve">
+    <value>Not all components can be replaced. Selected spec may not have component data for the given size.</value>
+  </data>
+  <data name="FailedToReplaceAllComponentsRefOut" xml:space="preserve">
+    <value>Some of the components are referenced out or are read-only and were not replaced. Try checking out the component(s) from Model Server and try again.</value>
+  </data>
+  <data name="FailedToValidateSpecData" xml:space="preserve">
+    <value>[Error] Failed to validate spec data for components. {0}</value>
+  </data>
+  <data name="FirstPipeSegment" xml:space="preserve">
+    <value>seg-1</value>
+  </data>
+  <data name="FirstTraySegment" xml:space="preserve">
+    <value>tseg-1</value>
+  </data>
+  <data name="FixingDisconnects" xml:space="preserve">
+    <value>Fixing disconnects... {0} of {1}</value>
+  </data>
+  <data name="For" xml:space="preserve">
+    <value>for </value>
+  </data>
+  <data name="ForPipeline" xml:space="preserve">
+    <value>for line </value>
+  </data>
+  <data name="InvalidComponent" xml:space="preserve">
+    <value>Invalid Component: The component is missing information required for connectivity validation, the component may be have been corrupted or was not properly converted to OpenPlant Modeler format. Component was not processed.</value>
+  </data>
+  <data name="IsoNotUnique" xml:space="preserve">
+    <value>IsoSheet Name Not Unique</value>
+  </data>
+  <data name="IsoSheetAlreadyDefined" xml:space="preserve">
+    <value>IsoSheet {0} already exists in selected pipeline.</value>
+  </data>
+  <data name="LoadingComponents" xml:space="preserve">
+    <value>Loading components, please wait...</value>
+  </data>
+  <data name="LoadingPM" xml:space="preserve">
+    <value>Loading and cacheing data. Please wait...</value>
+  </data>
+  <data name="MoveComponents" xml:space="preserve">
+    <value>Moving Components...</value>
+  </data>
+  <data name="MoveComponentToIsoSheet" xml:space="preserve">
+    <value>move components to existing an Iso-Sheet</value>
+  </data>
+  <data name="MoveComponentToLine" xml:space="preserve">
+    <value>move components to another line</value>
+  </data>
+  <data name="MoveTrays" xml:space="preserve">
+    <value>Move Trays</value>
+  </data>
+  <data name="MovingComponents" xml:space="preserve">
+    <value>Moving components to {0}...</value>
+  </data>
+  <data name="MultipleSpecIdsFound" xml:space="preserve">
+    <value>SpecId in spec is not unique</value>
+  </data>
+  <data name="NameNotDefForIso" xml:space="preserve">
+    <value>IsoSheet Name Not Defined</value>
+  </data>
+  <data name="NewTrayline" xml:space="preserve">
+    <value>Create Trayline</value>
+  </data>
+  <data name="NoCompatibleComponents" xml:space="preserve">
+    <value>No other compatible components found for the selected component in the spec.</value>
+  </data>
+  <data name="NoComponents" xml:space="preserve">
+    <value>No Components</value>
+  </data>
+  <data name="NoComponentsOnPipeline" xml:space="preserve">
+    <value>No Components on line</value>
+  </data>
+  <data name="NoComponentsOnPipelineFor" xml:space="preserve">
+    <value>No components found for {0} to process for the selected line</value>
+  </data>
+  <data name="NoComponentsSelected" xml:space="preserve">
+    <value>No Components Selected</value>
+  </data>
+  <data name="NoComponentsSelectedTo" xml:space="preserve">
+    <value>No components selected. Please select atleast one component to {0}</value>
+  </data>
+  <data name="NoDisconnects" xml:space="preserve">
+    <value>No disconnects found</value>
+  </data>
+  <data name="NoError" xml:space="preserve">
+    <value>No error found</value>
+  </data>
+  <data name="NoIsoSheet" xml:space="preserve">
+    <value>No Iso-Sheet selected</value>
+  </data>
+  <data name="NoNameForIso" xml:space="preserve">
+    <value>No name was set for Iso-Sheet, you must define a name for Iso-Sheet</value>
+  </data>
+  <data name="NoOtherLine" xml:space="preserve">
+    <value>No other {0} was found to move components to. Please check out or create a new {1} to move components.</value>
+  </data>
+  <data name="NoOtherOptionForIso" xml:space="preserve">
+    <value>No IsoSheet is currently defined for the selected pipeline, or the components are already associated with the only Iso-Sheet on the selected pipeline.</value>
+  </data>
+  <data name="NoOtherOptionForIsoTitle" xml:space="preserve">
+    <value>No IsoSheet to Move Components to</value>
+  </data>
+  <data name="NoOtherPipelineFound" xml:space="preserve">
+    <value>No Other {0} Found</value>
+  </data>
+  <data name="NoPipelineSelected" xml:space="preserve">
+    <value>No {0} Selected</value>
+  </data>
+  <data name="NoPipelineSelectedFor" xml:space="preserve">
+    <value>No {0} is selected. Please select a {1} for {2}.</value>
+  </data>
+  <data name="NoSpec" xml:space="preserve">
+    <value>Specification property is null for {0}. Component will be ignored.</value>
+  </data>
+  <data name="NoSpecSet" xml:space="preserve">
+    <value>Spec Not Set In Component</value>
+  </data>
+  <data name="NotAllComponentsCanBeReplaced" xml:space="preserve">
+    <value>Not All Components can be Replaced</value>
+  </data>
+  <data name="NotAllComponentsWereReplaced" xml:space="preserve">
+    <value>Not All Components were Replaced</value>
+  </data>
+  <data name="NotAllDisconnectsFixed" xml:space="preserve">
+    <value>Some of the disconnects could not be fixed</value>
+  </data>
+  <data name="NotAllDisconnectsFixedTitle" xml:space="preserve">
+    <value>Not all disconnects were fixed</value>
+  </data>
+  <data name="OpenEnds" xml:space="preserve">
+    <value>Open Ends:</value>
+  </data>
+  <data name="OpenTapPortsFound" xml:space="preserve">
+    <value>Open tap port(s) found, creating an Iso-Sheet for these component(s) may result an error in IsoExtractor / IsoGen</value>
+  </data>
+  <data name="OpenTapPortsFoundTitle" xml:space="preserve">
+    <value>Open Tap Port(s) Found</value>
+  </data>
+  <data name="Pipeline" xml:space="preserve">
+    <value>Pipeline</value>
+  </data>
+  <data name="PipelineComponentSpecMismatch" xml:space="preserve">
+    <value>Component and line spec mismatch</value>
+  </data>
+  <data name="PipelineManager" xml:space="preserve">
+    <value>Pipeline Manager</value>
+  </data>
+  <data name="PipeSegmentMarker" xml:space="preserve">
+    <value>-seg-</value>
+  </data>
+  <data name="PleaseSelect" xml:space="preserve">
+    <value>Please select one of the following {0}(s):</value>
+  </data>
+  <data name="QueringSepc" xml:space="preserve">
+    <value>Querying spec for appropriate components. Please wait...</value>
+  </data>
+  <data name="Rechecking" xml:space="preserve">
+    <value>Rechecking connectivity. Please wait...</value>
+  </data>
+  <data name="Refreshing" xml:space="preserve">
+    <value>Refreshing...</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="ReplaceComponents" xml:space="preserve">
+    <value>Replace Component(s)</value>
+  </data>
+  <data name="ReplacingComponents" xml:space="preserve">
+    <value>Replacing components...</value>
+  </data>
+  <data name="Scanning" xml:space="preserve">
+    <value>Scanning active design file for components and related items...</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select {0}</value>
+  </data>
+  <data name="SelectedComponentsCreateDisconnects" xml:space="preserve">
+    <value>Current selection of component(s) will create disconnects in the selected isosheet.</value>
+  </data>
+  <data name="SelectedIsoSheet" xml:space="preserve">
+    <value>Selected Iso-Sheet: {0}:</value>
+  </data>
+  <data name="SelectedLine" xml:space="preserve">
+    <value>Selected {0}: {1}</value>
+  </data>
+  <data name="SelectionCreateDisconnects" xml:space="preserve">
+    <value>Selection will Create Disconnects</value>
+  </data>
+  <data name="SpecIdNotFoundInSpec" xml:space="preserve">
+    <value>SpecId not found in spec</value>
+  </data>
+  <data name="SpecIdNotSetInComponent" xml:space="preserve">
+    <value>SpecId not set in component</value>
+  </data>
+  <data name="SpecValidation" xml:space="preserve">
+    <value>Spec Validation</value>
+  </data>
+  <data name="StressInterface" xml:space="preserve">
+    <value>Stress Interface</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="TapConnection" xml:space="preserve">
+    <value>Tap Connection</value>
+  </data>
+  <data name="TotalComps" xml:space="preserve">
+    <value>Total processed:</value>
+  </data>
+  <data name="Trayline" xml:space="preserve">
+    <value>Trayline</value>
+  </data>
+  <data name="TraylineManager" xml:space="preserve">
+    <value>Trayline Manager</value>
+  </data>
+  <data name="TraySegmentMarker" xml:space="preserve">
+    <value>_Branch_</value>
+  </data>
+  <data name="TraySegments" xml:space="preserve">
+    <value>Tray Segments</value>
+  </data>
+  <data name="UnexpectedError1" xml:space="preserve">
+    <value>The design file may have changed and {0} is no longer synced. To avoid any unexpected behavior please close {1} and relaunch.</value>
+  </data>
+  <data name="UnexpectedError2" xml:space="preserve">
+    <value>An unexpected Error occured. Error Message: {0}</value>
+  </data>
+  <data name="UnexpectedErrorTitle1" xml:space="preserve">
+    <value>Design File has Changed</value>
+  </data>
+  <data name="UnexpectedErrorTitle2" xml:space="preserve">
+    <value>Unexpected Error</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>&amp;Update</value>
+  </data>
+  <data name="UpdatingComponents" xml:space="preserve">
+    <value>Updating components...</value>
+  </data>
+  <data name="UpdatingComponentsOf" xml:space="preserve">
+    <value>Updating component {0} of {1}...</value>
+  </data>
+  <data name="UpdatingPipeline" xml:space="preserve">
+    <value>Updating line...</value>
+  </data>
+  <data name="ValidatingJoints" xml:space="preserve">
+    <value>Validating joints...</value>
+  </data>
+  <data name="ValidatingSpecData" xml:space="preserve">
+    <value>Validating {0} components. Please wait...</value>
+  </data>
+  <data name="Component1" xml:space="preserve">
+    <value>Component 1</value>
+  </data>
+  <data name="Component1Port" xml:space="preserve">
+    <value>Component 1 Port</value>
+  </data>
+  <data name="Component2" xml:space="preserve">
+    <value>Component 2</value>
+  </data>
+  <data name="Component2Port" xml:space="preserve">
+    <value>Component 2 Port</value>
+  </data>
+  <data name="statusStrip1" xml:space="preserve">
+    <value>Status strip</value>
+  </data>
+  <data name="FixDisconnects" xml:space="preserve">
+    <value>Fix Disconnects</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="ConnectivityChecker" xml:space="preserve">
+    <value>Connectivity Checker</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="Insulation" xml:space="preserve">
+    <value>Insulation</value>
+  </data>
+  <data name="RemoveInsulation" xml:space="preserve">
+    <value>Remove Insulation</value>
+  </data>
+  <data name="UpdateWelds" xml:space="preserve">
+    <value>Update fastener types for spool</value>
+  </data>
+  <data name="AssignSpoolNumber" xml:space="preserve">
+    <value>Assign Spool Number</value>
+  </data>
+  <data name="ClearSpoolIDs" xml:space="preserve">
+    <value>Clear Spool Id</value>
+  </data>
+  <data name="SpoolNumber" xml:space="preserve">
+    <value>Spool Number</value>
+  </data>
+  <data name="SpoolDefinition" xml:space="preserve">
+    <value>Spool Definition</value>
+  </data>
+  <data name="Material" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="Thickness" xml:space="preserve">
+    <value>Thickness</value>
+  </data>
+  <data name="ValidateSpecDataPipeline" xml:space="preserve">
+    <value>Validate Spec data for Pipeline</value>
+  </data>
+  <data name="CreatePipeline" xml:space="preserve">
+    <value>Create Pipeline</value>
+  </data>
+  <data name="EditPipeline" xml:space="preserve">
+    <value>Edit selected Pipeline</value>
+  </data>
+  <data name="DeletePipeline" xml:space="preserve">
+    <value>Delete selected Pipeline</value>
+  </data>
+  <data name="GenerateSegments" xml:space="preserve">
+    <value>Generate Segments</value>
+  </data>
+  <data name="StressAnalysis" xml:space="preserve">
+    <value>Stress Analysis</value>
+  </data>
+  <data name="PipeSegments" xml:space="preserve">
+    <value>Pipe Segments</value>
+  </data>
+  <data name="IsoSheets" xml:space="preserve">
+    <value>Iso Sheets</value>
+  </data>
+  <data name="IsoSheetTools" xml:space="preserve">
+    <value>Iso Sheet Tools</value>
+  </data>
+  <data name="AddanewIsoSheet" xml:space="preserve">
+    <value>Add a new IsoSheet</value>
+  </data>
+  <data name="DeleteIsoSheet" xml:space="preserve">
+    <value>Delete selected Iso Sheet</value>
+  </data>
+  <data name="MovecomponentstoIsoSheet" xml:space="preserve">
+    <value>Move components to IsoSheet</value>
+  </data>
+  <data name="ComponetTools" xml:space="preserve">
+    <value>Componet Tools</value>
+  </data>
+  <data name="SelectAllComponent" xml:space="preserve">
+    <value>Select All Component</value>
+  </data>
+  <data name="DeselectAllComponent" xml:space="preserve">
+    <value>De-select All Component</value>
+  </data>
+  <data name="InvertSelection" xml:space="preserve">
+    <value>Invert Selection</value>
+  </data>
+  <data name="ReplaceSelectedComponents" xml:space="preserve">
+    <value>Replace Selected Component(s)</value>
+  </data>
+  <data name="ReplaceAll" xml:space="preserve">
+    <value>Replace &amp;All</value>
+  </data>
+  <data name="Anchorpoint" xml:space="preserve">
+    <value>Anchor point</value>
+  </data>
+  <data name="OverrideAnchorPoint" xml:space="preserve">
+    <value>Override this as the anchor point</value>
+  </data>
+  <data name="Selectedcomponents" xml:space="preserve">
+    <value>Selected component(s)</value>
+  </data>
+  <data name="Replacewith" xml:space="preserve">
+    <value>Replace with</value>
+  </data>
+  <data name="Selectspecification" xml:space="preserve">
+    <value>Select specification</value>
+  </data>
+  <data name="Selectnominaldiameter" xml:space="preserve">
+    <value>Select nominal diameter</value>
+  </data>
+  <data name="SelectInstance" xml:space="preserve">
+    <value>Select Instance</value>
+  </data>
+  <data name="Component" xml:space="preserve">
+    <value>Component</value>
+  </data>
+  <data name="ErrorDescription" xml:space="preserve">
+    <value>Error Description</value>
+  </data>
+  <data name="Updatefromspec" xml:space="preserve">
+    <value>Update from spec</value>
+  </data>
+  <data name="DgnReadonly" xml:space="preserve">
+    <value>Readonly design file: Cannot run Replace Component comment.</value>
+  </data>
+  <data name="NoComponentinDgn" xml:space="preserve">
+    <value>No component found in the dgn.</value>
+  </data>
+  <data name="NoComponentsSelectedinDgn" xml:space="preserve">
+    <value>No components selected: Please select atleast one component and restart replace command</value>
+  </data>
+  <data name="ReadonlyComps" xml:space="preserve">
+    <value>Some of the components are marked as read only or referenced out.</value>
+  </data>
+  <data name="cmb_CompDisplayOptionsFilterIsoSheet" xml:space="preserve">
+    <value>Filter out for iso-sheet</value>
+  </data>
+  <data name="cmb_CompDisplayOptionsShowAll" xml:space="preserve">
+    <value>Show All</value>
+  </data>
+  <data name="cmb_CompDisplayOptionsShowUnassigned" xml:space="preserve">
+    <value>Show Unassigned</value>
+  </data>
+  <data name="cmb_DisplayOptionsShowAll" xml:space="preserve">
+    <value>Show All</value>
+  </data>
+  <data name="cmb_DisplayOptionsShowErrors" xml:space="preserve">
+    <value>Show Errors</value>
+  </data>
+  <data name="cmb_DisplayOptionsShowOpenEnds" xml:space="preserve">
+    <value>Show Open Ends</value>
+  </data>
+  <data name="SelectionPrompt" xml:space="preserve">
+    <value>Show spec grid for missing fasteners and seals</value>
+  </data>
+  <data name="HVACSystem" xml:space="preserve">
+    <value>HVAC System</value>
+  </data>
+  <data name="HVACSystemManager" xml:space="preserve">
+    <value>HVAC System Manager</value>
+  </data>
+  <data name="DeleteHVACSystem" xml:space="preserve">
+    <value>Delete selected HVAC System</value>
+  </data>
+  <data name="EditHVACSystem" xml:space="preserve">
+    <value>Edit selected HVAC System</value>
+  </data>
+  <data name="MoveHVACComponents" xml:space="preserve">
+    <value>Move selected HVAC components</value>
+  </data>
+  <data name="NewHVACSystem" xml:space="preserve">
+    <value>Create HVAC System</value>
+  </data>
+  <data name="HVACSegments" xml:space="preserve">
+    <value>HVAC Segments</value>
+  </data>
+  <data name="ComponentsInHVACSystem" xml:space="preserve">
+    <value>Showing all component(s) in HVAC System; HVAC System has {0} component(s); Selected {1}</value>
+  </data>
+  <data name="Create_HVACSystem" xml:space="preserve">
+    <value>Create HVAC System</value>
+  </data>
+  <data name="MultiPipelineDelete" xml:space="preserve">
+    <value>You are about to delete selected pipeline(s), are you sure you want to continue?
+
+Pipeline(s) that have associated components or are referenced out will NOT be deleted.</value>
+  </data>
+  <data name="MultiPipelineDeleteTitle" xml:space="preserve">
+    <value>Delete Multiple Pipelines?</value>
+  </data>
+  <data name="DescCCNoErrorPipelineChange" xml:space="preserve">
+    <value>No disconnect found (change in pipelines)</value>
+  </data>
+  <data name="DisconnectInIsosheetDelete" xml:space="preserve">
+    <value>Disconnects have been found in the selected components. Deleteing of components from  Iso-Sheet for these components may result in an error in Isometrics Manager.</value>
+  </data>
+  <data name="UpdatingPipelines" xml:space="preserve">
+    <value>Committing changes to Pipeline(s), and updating related components. This may take a few moments. Please wait...</value>
+  </data>
+  <data name="CheckingConnectivity" xml:space="preserve">
+    <value>Validating component connections, verifying joints and evaluating physical connectivity. This may take a few moments to several minutes depending on the number of components. Please wait...</value>
+  </data>
+  <data name="DeletingPipelinesInfo" xml:space="preserve">
+    <value>Deleting selected Pipeline(s) and related plant objects. Pipeline(s) with related components will be skipped. Please wait...</value>
+  </data>
+  <data name="DeletingSelectedPipelines" xml:space="preserve">
+    <value>Deleting selected Pipeline(s)...</value>
+  </data>
+  <data name="MovingComponentsToPipeline" xml:space="preserve">
+    <value>Moving components to selected pipeline and applying properties from selected pipeline to components.  This may take a few moments. Please wait...</value>
+  </data>
+  <data name="SavingChanges" xml:space="preserve">
+    <value>Saving changes...</value>
+  </data>
+  <data name="ScanningDgn" xml:space="preserve">
+    <value>Scanning design file...</value>
+  </data>
+  <data name="ScanningPipelines" xml:space="preserve">
+    <value>Scanning active design file for Pipeline(s) and related items. Please wait...</value>
+  </data>
+  <data name="ValidateSpecData" xml:space="preserve">
+    <value>Validating spec data...</value>
+  </data>
+  <data name="ValidateSpecDataForComponents" xml:space="preserve">
+    <value>Validating component data with spec data. Please wait...</value>
+  </data>
+  <data name="VerifyingConnections" xml:space="preserve">
+    <value>Verifying connections...</value>
+  </data>
+  <data name="GeneratingIsosheets" xml:space="preserve">
+    <value>Auto-generating Isosheets...</value>
+  </data>
+  <data name="GeneratingIsosheetsDesc" xml:space="preserve">
+    <value>Validating connectivity, verifying component networks and creating Isosheets for selected pipelines. This may take a few moments. Please wait...</value>
+  </data>
+  <data name="SpoolGenDesc" xml:space="preserve">
+    <value>Auto-generating spools for selected Pipeline(s). This may take a few moments. Please wait...</value>
+  </data>
+  <data name="SpoolGenTitle" xml:space="preserve">
+    <value>Auto-generating Spools...</value>
+  </data>
+  <data name="SpoolCountMissing" xml:space="preserve">
+    <value>Spool Count property is missing on the Pipeline class. Kindly upgrade your schemas.</value>
+  </data>
+  <data name="SpoolIdMissing" xml:space="preserve">
+    <value>Spool Id property is missing on Piping Component class. Kindly upgrade your schemas.</value>
+  </data>
+  <data name="SpoolNumberMissing" xml:space="preserve">
+    <value>Spool Number property is missing on Piping Component class. Kindly upgrade your schemas.</value>
+  </data>
+  <data name="SpoolPrefixMissing" xml:space="preserve">
+    <value>Spool Prefix property is missing on the Pipeline class. Kindly upgrade your schemas.</value>
+  </data>
+  <data name="InsulationUpdateDesc" xml:space="preserve">
+    <value>Updating insulation on selected Pipeline(s), updating and redrawing associated components. This may take a few moments. Please wait...</value>
+  </data>
+  <data name="InsulationUpdateTitle" xml:space="preserve">
+    <value>Updating Insulation...</value>
+  </data>
+  <data name="AssociationsNotDefined" xml:space="preserve">
+    <value>Associations section not defined, associations are required for class '{0}', and must be defined before instance data section, line: {1}</value>
+  </data>
+  <data name="BadClassName" xml:space="preserve">
+    <value>'{0}' is not a valid class name</value>
+  </data>
+  <data name="BadImportCommand" xml:space="preserve">
+    <value>Class name not specified</value>
+  </data>
+  <data name="ImportCommandFormat" xml:space="preserve">
+    <value>Command format: OpenPlantModeler Import &lt;Valid Class Name&gt;</value>
+  </data>
+  <data name="ImportingInstances" xml:space="preserve">
+    <value>Importing instances</value>
+  </data>
+  <data name="ImportingInstancesInfo" xml:space="preserve">
+    <value>Reading file and creating instances in design file. This may take take a few minutes. Please wait...</value>
+  </data>
+  <data name="InvalidAssociationClass" xml:space="preserve">
+    <value>Association class is invalid, line {0}</value>
+  </data>
+  <data name="InvalidPropertyName" xml:space="preserve">
+    <value>Invalid property name, line {0}</value>
+  </data>
+  <data name="InvalidString" xml:space="preserve">
+    <value>Invalid string:  '{0}', line: {1}</value>
+  </data>
+  <data name="NoAssociationRequired" xml:space="preserve">
+    <value>Associations defined not required, line: {0}</value>
+  </data>
+  <data name="AutoGenerateSpool" xml:space="preserve">
+    <value>AutoGenerate Spool</value>
+  </data>
+  <data name="AutoGenerateIsoSheet" xml:space="preserve">
+    <value>AutoGenerate Iso-Sheet</value>
+  </data>
+  <data name="UpdateSpools" xml:space="preserve">
+    <value>Update Spool Ids</value>
+  </data>
+  <data name="UpdateSpoolsTT" xml:space="preserve">
+    <value>Refresh Spool Ids</value>
+  </data>
+  <data name="AutoGenerateSpools" xml:space="preserve">
+    <value>AutoGenerate Spool Ids</value>
+  </data>
+  <data name="AutoGenerateSpoolsTT" xml:space="preserve">
+    <value>ReGenerate Spool Ids</value>
+  </data>
+  <data name="ClearSpools" xml:space="preserve">
+    <value>Clear Spool Ids</value>
+  </data>
+  <data name="ClearSpoolsTT" xml:space="preserve">
+    <value>Delete Pipeline Spools</value>
+  </data>
+  <data name="AssignSpoolID" xml:space="preserve">
+    <value>Assign Spool Id</value>
+  </data>
+  <data name="AutoGenerateIsoSheetContinue" xml:space="preserve">
+    <value>'Auto-Generate Iso-Sheet' creates Iso-sheets based on connectivity, and iso-sheet break points. This will delete any previously created iso-sheets for selected pipeline(s). Pipeline(s) with no component will be skipped. Are you sure want to continue?</value>
+  </data>
+  <data name="AutoGenerateSpoolContinue" xml:space="preserve">
+    <value>'Auto-Generate Spools creates Spools based on connectivity, Pipeline start point, and Spool break points. This will delete any previously created spools for selected pipeline(s). Pipeline(s) with no component will be skipped. Are you sure want to continue?</value>
+  </data>
+  <data name="HideComponents" xml:space="preserve">
+    <value>Hide Components</value>
+  </data>
+  <data name="NoPipelinChecked" xml:space="preserve">
+    <value>No Pipeline is checked.</value>
+  </data>
+  <data name="ShowComponents" xml:space="preserve">
+    <value>Show Components</value>
+  </data>
+  <data name="ShowingComponents" xml:space="preserve">
+    <value>Showing {0} components</value>
+  </data>
+  <data name="ShowingComponentsForChecked" xml:space="preserve">
+    <value>Showing {0} components for checked Pipeline(s).</value>
+  </data>
+  <data name="TotalActivePipeline" xml:space="preserve">
+    <value>Total {0} active Pipeline(s).</value>
+  </data>
+  <data name="TotalPipelines" xml:space="preserve">
+    <value>Total {0} Pipeline(s).</value>
+  </data>
+  <data name="TotalReferencedOutPipeline" xml:space="preserve">
+    <value>Total {0} referenced out Pipeline(s).</value>
+  </data>
+  <data name="PivotPointDisplayError" xml:space="preserve">
+    <value>Failed to display pivot point on component. You may not be able to replace selected component(s).</value>
+  </data>
+  <data name="QueryingSpecForPeer" xml:space="preserve">
+    <value>Querying spec for {0} and peer classes. This may take a few moments. Please wait...</value>
+  </data>
+  <data name="QuerySpec" xml:space="preserve">
+    <value>Querying spec</value>
+  </data>
+  <data name="SomeErrorsNotFixedDesc" xml:space="preserve">
+    <value>Components with different data from its Pipeline or with invalid Spec ids cannot be updated, you many need to use Change Spec / Change Size utility or Specification Generator.</value>
+  </data>
+  <data name="SomeErrorsNotFixedTitle" xml:space="preserve">
+    <value>Not all errors can be fixed</value>
+  </data>
+  <data name="AutoGenerateIsosheets" xml:space="preserve">
+    <value>Auto-generate Isosheets</value>
+  </data>
+  <data name="CheckAllComponents" xml:space="preserve">
+    <value>Check all components</value>
+  </data>
+  <data name="CreateANewIsoSheet" xml:space="preserve">
+    <value>Create a new Isosheet</value>
+  </data>
+  <data name="CreateANewPipeline" xml:space="preserve">
+    <value>Create a new Pipeline</value>
+  </data>
+  <data name="DeleteIsosheets" xml:space="preserve">
+    <value>Delete Isosheet</value>
+  </data>
+  <data name="DeleteSelectedPipeline" xml:space="preserve">
+    <value>Delete selected pipeline(s)</value>
+  </data>
+  <data name="EditInsulationOnAPipeline" xml:space="preserve">
+    <value>Edit insulation on a Pipeline</value>
+  </data>
+  <data name="EditIsoSheets" xml:space="preserve">
+    <value>Edit IsoSheet</value>
+  </data>
+  <data name="EditselectedPipeline" xml:space="preserve">
+    <value>Edit selected Pipeline(s)</value>
+  </data>
+  <data name="ExportDataForStressAnalysis" xml:space="preserve">
+    <value>Export data for stress analysis</value>
+  </data>
+  <data name="IsosheetManager" xml:space="preserve">
+    <value>Isosheet Manager</value>
+  </data>
+  <data name="MoveCheckedComponentsToOtherPipeline" xml:space="preserve">
+    <value>Move checked components to other Pipeline</value>
+  </data>
+  <data name="MoveUnassignedComponentToIsosheet" xml:space="preserve">
+    <value>Move unassigned component(s) to Isosheet</value>
+  </data>
+  <data name="RemoveComponentsFromIsosheet" xml:space="preserve">
+    <value>Remove component(s) from Isosheet</value>
+  </data>
+  <data name="RunConnectivityCheckerOnSelectedPipeline" xml:space="preserve">
+    <value>Run connectivity checker on selected pipeline(s)</value>
+  </data>
+  <data name="SelectConnectedComponents" xml:space="preserve">
+    <value>Select Connected Components</value>
+  </data>
+  <data name="ShowActivePipelines" xml:space="preserve">
+    <value>Show Active Pipelines</value>
+  </data>
+  <data name="ShowAll" xml:space="preserve">
+    <value>Show All</value>
+  </data>
+  <data name="ShowAllComponents" xml:space="preserve">
+    <value>Show all components</value>
+  </data>
+  <data name="ShowAllComponentsInSelectedPipeline" xml:space="preserve">
+    <value>Show all (components in selected pipeline)</value>
+  </data>
+  <data name="ShowComponentNotAssignedToAnyIsoSheet" xml:space="preserve">
+    <value>Show component not assigned to any IsoSheet</value>
+  </data>
+  <data name="ShowComponentsForSelectedPipelines" xml:space="preserve">
+    <value>Show components for selected Pipelines</value>
+  </data>
+  <data name="ShowComponentsInSelectedIsoSheetOnly" xml:space="preserve">
+    <value>Show components in selected IsoSheet only</value>
+  </data>
+  <data name="ShowReferencedPipelines" xml:space="preserve">
+    <value>Show Referenced Pipelines</value>
+  </data>
+  <data name="SortByConnectivity" xml:space="preserve">
+    <value>Sort by Connectivity</value>
+  </data>
+  <data name="UncheckAllComponents" xml:space="preserve">
+    <value>Uncheck all components</value>
+  </data>
+  <data name="ValidateSpecForComponents" xml:space="preserve">
+    <value>Validate spec for components</value>
+  </data>
+  <data name="Filtered" xml:space="preserve">
+    <value>(Filtered)</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="AutogenerateIsoMode" xml:space="preserve">
+    <value>Select mode for Autogeneration of IsoSheet.</value>
+  </data>
+  <data name="SingleIsoForAutogenerateIsoSheet" xml:space="preserve">
+    <value>Do you want to create a Single IsoSheet for all Pipelines selected?</value>
+  </data>
+  <data name="ModifyPipeBends" xml:space="preserve">
+    <value>Modify Pipe Bend(s)</value>
+  </data>
+  <data name="NonPipeBendComponentSelected" xml:space="preserve">
+    <value>One or more selected component is not Pipe Bend and will be ignored.</value>
+  </data>
+  <data name="JAD_Btn_MoveTo" xml:space="preserve">
+    <value>Move to</value>
+  </data>
+  <data name="JAD_ColHeader_AdjComp1" xml:space="preserve">
+    <value>Current Component</value>
+  </data>
+  <data name="JAD_ColHeader_AdjComp2" xml:space="preserve">
+    <value>Connecting Component</value>
+  </data>
+  <data name="JAD_ColHeader_ConnectedISOSheet" xml:space="preserve">
+    <value>Connecting ISO Sheet</value>
+  </data>
+  <data name="JAD_ColHeader_ConnectedPipeline" xml:space="preserve">
+    <value>Connecting Pipeline</value>
+  </data>
+  <data name="JAD_ColHeader_JointType" xml:space="preserve">
+    <value>Joint Type</value>
+  </data>
+  <data name="JAD_DlgTitle" xml:space="preserve">
+    <value>Joint Associations Manager</value>
+  </data>
+  <data name="JAD_Rpt_AdjComps" xml:space="preserve">
+    <value>Components:</value>
+  </data>
+  <data name="JAD_Rpt_JointType" xml:space="preserve">
+    <value>Joint Type:</value>
+  </data>
+  <data name="JAD_Rpt_RelISOSheets" xml:space="preserve">
+    <value>Related ISO Sheets:</value>
+  </data>
+  <data name="JAD_Rpt_RelPipelines" xml:space="preserve">
+    <value>Related Pipelines:</value>
+  </data>
+  <data name="JAD_Rpt_SealnFastener" xml:space="preserve">
+    <value>Seals and Fasteners:</value>
+  </data>
+  <data name="JAD_WaitDlg_Msg" xml:space="preserve">
+    <value>Scanning active design file for 'Joints' and related items, Please wait ...</value>
+  </data>
+  <data name="ManageJointAssociations" xml:space="preserve">
+    <value>Manage Joint Associations</value>
+  </data>
+  <data name="JAD_Status_HasLockedInstance" xml:space="preserve">
+    <value>Warning, Joint includes objects that are locked</value>
+  </data>
+  <data name="JAD_Status_IncompleteData" xml:space="preserve">
+    <value>Warning, Joint has incomplete data</value>
+  </data>
+  <data name="JAD_Rpt_OnISOSheet" xml:space="preserve">
+    <value>{0} on ISO Sheet {1}</value>
+  </data>
+  <data name="JAD_Rpt_OnPipeline" xml:space="preserve">
+    <value>{0} on Pipeline {1}</value>
+  </data>
+  <data name="ChangeSize" xml:space="preserve">
+    <value>Change Size</value>
+  </data>
+  <data name="ChangeSizeForComp" xml:space="preserve">
+    <value>Change Size for Component(s)</value>
+  </data>
+  <data name="CSF_ClearAll" xml:space="preserve">
+    <value>Clear All</value>
+  </data>
+  <data name="CSF_ClearAllTT" xml:space="preserve">
+    <value>Clear All Filters</value>
+  </data>
+  <data name="CSF_DelRow" xml:space="preserve">
+    <value>Delete Row</value>
+  </data>
+  <data name="CSF_DelRowTT" xml:space="preserve">
+    <value>Delete Current Row</value>
+  </data>
+  <data name="CSF_DuplicateFilter" xml:space="preserve">
+    <value>There is alreay a filter defined for this property.</value>
+  </data>
+  <data name="CSF_IncompleteFilter" xml:space="preserve">
+    <value>Incomplete Filter Definition</value>
+  </data>
+  <data name="DefineFilter" xml:space="preserve">
+    <value>Define Filter for Spec / Size</value>
+  </data>
+  <data name="CSF_DialogTitle" xml:space="preserve">
+    <value>Component Selection Filter</value>
+  </data>
+  <data name="CSF_DGV_ColCompClass" xml:space="preserve">
+    <value>Component Class</value>
+  </data>
+  <data name="CSF_DGV_ColPropName" xml:space="preserve">
+    <value>Property Name</value>
+  </data>
+  <data name="CSF_DGV_ColPropValue" xml:space="preserve">
+    <value>Property Value</value>
+  </data>
+  <data name="SelectionGrid_CheckBox_Prompt" xml:space="preserve">
+    <value>Use this component as template to set up selection filter for all {0}s.</value>
+  </data>
+  <data name="Unchanged" xml:space="preserve">
+    <value>-Unchanged-</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Error_ISOSheet_Ref_Pipelines" xml:space="preserve">
+    <value>Pipeline '{0}' is associated with Iso Sheet '{1}' which is also associated with components from other pipelines currently referenced out from OPMS. {2}Following pipelines need to be checked out from OPMS in order to edit/delete the ISO Sheet '{3}':{4}{5}</value>
+  </data>
+  <data name="AnchorCenterPoint" xml:space="preserve">
+    <value>Center Point</value>
+  </data>
+  <data name="AnchorMainPort" xml:space="preserve">
+    <value>Main Port</value>
+  </data>
+  <data name="AnchorRunPort" xml:space="preserve">
+    <value>Run Port</value>
+  </data>
+  <data name="GenerateIso" xml:space="preserve">
+    <value>Generate Iso(s)</value>
+  </data>
+  <data name="GeneratingIsometricData" xml:space="preserve">
+    <value>Generating Isometric Data</value>
+  </data>
+  <data name="GeneratingIsometricDataDesc" xml:space="preserve">
+    <value>Generating data for Isometric Manager. Please wait ...</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="NoOPIMFound" xml:space="preserve">
+    <value>Unable to locate installed OpenPlant Isometrics Manager</value>
+  </data>
+  <data name="NoIsoSheetsDefinedForPipeline" xml:space="preserve">
+    <value>No IsoSheets are currently defined for the selected pipeline</value>
+  </data>
+  <data name="OPIMNotInstalled" xml:space="preserve">
+    <value>OPIM is not installed. Generate Iso(s) disabled. </value>
+  </data>
+  <data name="ContinuationDetected" xml:space="preserve">
+    <value>Continuation Detected</value>
+  </data>
+  <data name="DiffPipelines" xml:space="preserve">
+    <value>Different Pipelines</value>
+  </data>
+  <data name="FastenersNotInPlace" xml:space="preserve">
+    <value>Fasteners Not In Place</value>
+  </data>
+  <data name="InvalidComponent1" xml:space="preserve">
+    <value>Invalid Component</value>
+  </data>
+  <data name="InvalidJoint" xml:space="preserve">
+    <value>Invalid Joint</value>
+  </data>
+  <data name="JointFoundNotPhysicallyClose" xml:space="preserve">
+    <value>Joint Found No Physically Close</value>
+  </data>
+  <data name="KinkInTheConnection" xml:space="preserve">
+    <value>Misaligned Component</value>
+  </data>
+  <data name="MissingAssociatedJointItems" xml:space="preserve">
+    <value>Missing Associated Joint Items</value>
+  </data>
+  <data name="MissingFasteners" xml:space="preserve">
+    <value>Missing Fasteners</value>
+  </data>
+  <data name="NoErrorTapConnection" xml:space="preserve">
+    <value>No Error Tap Connection</value>
+  </data>
+  <data name="OpenEnd" xml:space="preserve">
+    <value>Open End</value>
+  </data>
+  <data name="OpenEndInVicinity" xml:space="preserve">
+    <value>Open End In Vicinity</value>
+  </data>
+  <data name="OpenTap" xml:space="preserve">
+    <value>Open Tap</value>
+  </data>
+  <data name="PhysicallyCloseNoJointFound" xml:space="preserve">
+    <value>Physically Close No Joint Found</value>
+  </data>
+  <data name="TapConnectionIsNotComponent" xml:space="preserve">
+    <value>Tap Connection invalid</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="cmb_DisplayOptionsShowAllIssues" xml:space="preserve">
+    <value>Show All Issues</value>
+  </data>
+  <data name="cmb_DisplayOptionsShowWarnings" xml:space="preserve">
+    <value>Show Warnings</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="HVAC_CheckConnectivity" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAA2tJREFUSEvFlGlIVFEcxYXKz/XFyKlcUHPJykpttwhNI5NKaSpTW20htYSooCIo
+        chzHD1G5Qpaa5lqKY1oopeiXNltI0tQZGx0nxQFTc5vT/955To65jBR04Medd++558y89+6Y/T9JFfgr
+        phWZBnTAIGNkZphc0DME9AwSo+MoE12P8ZpcoOkHvv8k2DgOtqZhawT3jcHkAsUPQCngnqH+fX/HwdYU
+        PeAwL5+fVmT6rAXqBabcJHhH/SYXvOkE5zUxXQHzGLwmiTZVqcGpJiYtkCqu2qS0I7kekLzXh++UOGO7
+        xBoR8WemKKPAchUMTFhA4dbJbchtGsEz5iGFJnki6vl6XHntQyVWwh62eaYI+9IbRlCk0IfL5FE4/ngl
+        4pr34Hy1FwJiXX4XDNEBGaJDZQQ7OMJndoBGPWML+EjalWaJ/Q8cIWkMwM0vAfCOmW9Y48ZeOiCMzp86
+        XKrSwjZZBfN4JR8vvtSiq1+HvmG9Z2wwU2CWCD5SC0S/2Igb9TtwKNcVh+J2GRd0DwBtvTp40DsdVPQd
+        23I74JmuxjvNgFHYRLqUI8aRguW49tEXJ+WrcTR1g3E4o70POFuphV+eBqVN/Sj52sfnnzb3c3P5h0eo
+        bSj7o6z4zT0EP3TC5Xdbcb5mE/ykIjR2fPizoIVOoVWSivjGr+feajXciuj0QIjv2yMw1RbhshCjEt8Y
+        ESIrPXHhlRcOZCzBCVnouC8hFHzuBubIlPjUOYikuh7MitPPM4uvZBHOVa9BRKUH/CSLDQG7Y90QlueM
+        6Np1CMlxQlCs57hwJqHgbRewMFGFwoY+/nAtE/S/hFn2STcjLN8ZEVUeED+w43PeMRbX9963Q+RLdxwr
+        WU5vjUU3YcXWjCUU1HQAYWVarM1UwyFVxZ8Dmy9upGdB8r+9EKcq3HCs1BWbY+xZ4HB4+TKcrliBPSnW
+        7PoAz5tQFFTRBpQqdXBJU8O/QIM6entWpbdjW14HL/CK347gHAccL1uKoyXOfGQEpdmw8GyeM6moQN4K
+        zhOFDvvlWixIUGE2PRM2smtm878jwuESRz1yR4izbFm4kpjHcyYVFTxugTF0/BmFwshs4sQtEGfbIKTI
+        Hgef2LFwHbGFZ0wpKpgWQf536S8h3wYBSSJWIBOm/40ocDaRQfQSmYS5sDSJzMx+AaOE2zDCYtYyAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="HVAC_Create" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAyRJREFUSEutlF1I01EYxoVqV0FdhHNrKXqRF3UTYWXkTRd+pLOsNPKqbrrpSqIi
+        CaSLRakJBrXpMgpNKjVFS9PAIu0ioQ+jUGaaTqdzCg6m0023p/c9O25jujaxF3485zznOXv33/+cxYSt
+        sjFsiohFIbcHUeEKmUfdwOGGj2WpkeAcEXWDmUXARrCuEjy3Lckx6+qYiLqBeR4wOwjSlDpr4PcNIaXW
+        KjJjlGWEH7EoNGAHBiX/3ERrg3MQeSbqBl9m4SdSg9Xc10hZf1GoZxrosQK9RNhNZWMlicYpGAeBuz+A
+        q33ArodTnC+RiTBFH9hlAbomfKzbgD4koXoSjSMevOOspIHm7Aea8OaNIvfVDnnQaoaPMalErckTyPFg
+        2Qss80VhlWNWvjhizGvSC2pQTGwPgudrvwgPFuiCMLNLXtz4aEeS0QJFhRlJ1RYxZ5/XnSEXqeClRkc4
+        WKW1TtGGORcwueDFITrv+a0zyGiYxmE6399tLmhf2YTP65wLbpD/QrNyx5SLgucal7RCisOE1QkUvbcj
+        q9GGjpFFvBl2Cv/tn0Uk10ziaL0VVz7YMUW54AZn6zUoG84Dq7RCSjYYpRuYUGUhJsR85/1xoXsME+Kn
+        ajItIJ7WORfc4Ezdbtw2acEqrZCSDQboJm67Z8avWTeq+h3YUu7zWXk+NOcupnWF3OWvvKe7cetnJk6T
+        SiukZAO+gRqDBc1DTvGN1Xrfk+yQTxJvmFCceqzWES4CfmrUuPntuNCAr2I4Ry9eNvhkAy502pH6zIq9
+        jyziPbDf9tspyG6yKXKr1a6inlRc6ztGpOE6wbo69vM5DZw7aVQ7/E/RPQl0mL3Y98QqTk0/nZ6DtVPI
+        aJzGubYZ9hVafZxOq1e5cgwq0Bg5elYVinqPCM0hT8trBlJ9nJvG8uhSg/ZxakC0jHpR2G6HSm/BVnon
+        rIUddvaLKbPmHWQ/iMPl7gNgldY6RQ1a6Jo3j1ID0mCaWckXKuG83BmTVanEpc79OFEZocGGkZVZocTF
+        18nIIpXW/62M8tiV842JyChXhrnJm6z00lhdeqlynljnvygm5i9YszJEWNHoXAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="HVAC_Delete" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAz5JREFUSEvFk+tLk3EUx4XKzDd2UaI0u4AXKNAMi/R9phkRXVeKK/oHDHpRb+pt
+        WEEXMq0gsBuomYnTCgoqhBpluszlTN107qLiYrnpxH075zzPLi7NRS868OH8fud8f+e759nzi/l/UWHG
+        P7FgkGjKD/iYmb8jagP3NOD2EYEcYK59mDZqA6cXGJkkOEfAPSf3CNGFEbWB+SdgUcm9bw+93wi4Z3ZD
+        YK3UFwwSdbsAo8ofD6nagD5qg0+jED4SCxmwJiptMEj01g7hHTHvoQrz+Y23bag2Ahc7gTN6IPGmjfXn
+        VcU8QQNfWBFkTgMasqF6GLV9M3gZpuX9eqqHTPjw36KeqzHN4JkZCpYQXA/qeDFNF2SaLtUs+OKoa7lA
+        kREwC2fOoMYEXRBmdNKPc29d2FRtRewVi+Szb1wY8/rlcOeFi3i/PBGG4yfmGRYTY9CUwZCUBANplQoZ
+        jE8BwxN+bKdv+tCzERTUOrCjxo7PzinsfeKUOks76aCltBQ9OTloLz7wm0l70X7pWUpKYFixkvrqo9k8
+        QPlrFwrrnGjp86L5u0fqrf1eZNwdRt5DxUB/uAw9WVkY1Gol64sPBk30hTQ8rPfhiDZkMEC3cH2VlRiS
+        /fJrg5LX3RqSV1XfMxEcVJlVgG9btsCs0Ui+vrUYN7KLlNrRo5JvZu1W9apB9ziw5LIFXaM+VHW4seiS
+        UufMe9O4T/rKIXrP8fE6Y2Ym+vftgykvT+A116jXTMQqStWgfQxIuWVFg8kjv3htpfIkCeqTpNKTJFNf
+        OSQGS9nElJuLvl27BF5zLTScQzVocwDa5y7sfGBH+h2r/A9cb+r1CHvqnTj5whVuEEs08uvozc8XeE21
+        htkGHDTo1TDQYvFj8z27fDUd9PVsq7GhoM6BI00jUtdRXz3BBo1fk5PRk50NY3o6jGlpsuba7yZkoBuE
+        0Gj245jOhTWVViymd86Z940DoeFXc/aia/VqGDMyJNOwFiai9iRkQgZPBzAbuvpMQ1hmaZvmFLpWrUJ3
+        aqpkdTj/H3FEa0Tvrsxng6igeJOUgq7ERHxJSAgMj5MZFAET7rGG1g61FX3QodPED+IRERweCKotIx4r
+        mvjyX6GJOj/7sVD4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="HVAC_Edit" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAx5JREFUSEvFU2tIk1EYHpj+NehHF7oHFV2wKE0jqJA2DfwTXqiEVmq/srTMNExD
+        EJwzMyGnphDYRd201PJS0CJlVFCpQ5Qsc9PNOZVvsNy85J7OOfumm2h+I6IHHs6+933e59n5vnNE/w9y
+        Hf6Ky4KIphzANOWsdxQcYJ0BrNOErtXFxZ7dtIIDzHZgdJKQrgtIe2baI2Q6NwoO0P0E9DwDH5nm3+8C
+        0p7OCkaqZfVlQUQ9FqCX5x+HeK1LLzjg8xgYPxEuF0A1VMtXBIAMtZnA2E64ZIBcl7XlwTDKep3m6lIZ
+        quOOwdjTBTs9UUuCGL4yYI6LBhDzzWVGKPtnWS/n+iVknxVDU3ILypgA9Hd38TN02Fvyc5V9TvNWRQok
+        YaE4KpZAFh+Bmtj9qIgKng+YIduZIZfKg/Ti8L/pBXJp3APoolHJ0FUYgI/FMQgLd4ZcDQ+CqihvPmCC
+        XBDKsUkHbrZZsLXMAL8CPVvT31kwbnfA9supmQsgUNfIoL23B9yHVHQrglEjXc12kp6UOKdhAdwUYJxw
+        IIic6aiGUUiUIzhUaUKHeQoRdWZWp32qcwW0PCXmd3eC0yTCoApCh9wXVQk+qCq85mlOOWwDktUWhKvM
+        aO634+V3G6u3/LBjR4URh5+YkPLWwnR0LCYtHdqCbeDazhPzQGZefdEH0ampbuYUfMAAuYWbSg2EQ+x5
+        ZdEgWzeUDLFXVft1AhtJn44w8/yN4NSRHub15/wymKcH+IAeDvC9o0f32DRKO63wyXfW6UqfebXofS15
+        LfI14F6LBZhT8AFfxoH1JQY867Oxf7xO4dyJP78TKk3IyoA2bxW45hAYlELMKfgAzQggbbUg5LEJ28sN
+        7DvQeuM38i0IsvIyoc31B/diLzE/KNDcBWL0xgg06x3Y/dDETk0nOT0HKochUY2wgNvRoahIPOI0z/PG
+        nIIENA2CsV7nwJkmC9YqDFhBvgltx5W3o/hyLHJOi3Ffuo+ZN0iFmlOQgOcD8KTOSdrOTr6CxtwkFF44
+        hczIE+Qo3mB14SABS5LgZOhxxEdFY1danZfG/xwi0W+CWetIXem7QgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="HVAC_Edit_Insulation" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAe9JREFUSEtjGDjQ/fA/RZggACr6fZeXLDxCLTBd8gIRvmgYJIesFixOEAAVEa2J
+        FLVwQKYFUBEiALEWdD+sV5z9/P+sG//B8vtndv5fmezw/9n1S/+//4WIYQfEWAA0XGHWs/+r7/0Fy7WW
+        5vxvinb7f2xG7f/V4fr/7129BNUD0kwqhupbfBti+M7pJf/dPZz/27u5/+9M8f2/Ksbw/9xQC4QFyK4l
+        hJEtAFHH1nT+vzRB//+paeH/PTwhlhR5mv1fM6mLQguAYP+qzv+XJ+r8f3+y7P/V6Rb/VyWIg31SWZAL
+        V0O2BTuWAw3v1/j//lju/6drzP5f6Gb9vyKV+f+KCcWohmOzACaOTR6kLbyi8v/lPuX/7w8nAg03BRu+
+        Mo35f1hZGZLhIIDNACSD0eVBWsCG98j9f78/BMXwjfFsNWAzUQCaAdgsgBkMAifWAoOlW+L/+91uRBgO
+        AkiGELIgtb7m/+Uu4f/vt1v+f7qaGMNBAMkQbJbADK/vqvt/uYP///stukDDTYg0HAawWICMQUoawpz/
+        z821gRjeRYrhIIDHApB08pwj/6flxfxvjXT7PzXBAGz4pgRiDQcBAhY0Feb/39xR8H9CUtD/uhBXYFIs
+        B4sTD6DhjRUDgZez4/+U0LD/WhXrSDSY5oCBAQBMv4MsYVODWgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="HVAC_Move" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAshJREFUSEvFk01sTFEUxx/KAgmLWhA6WLCwFN9sDREbiUhIxMq+woKFrqVYWOgH
+        Eslg01a1jamPBFGxER+VSBulOtPOR6dT85LRmXZq3t/533df35uXaTtNF07yy7nn3HPuefe8e4z/J/UR
+        LIp5RYKmLKBAiguj4gLZaSBbEBztUM72xFZcIJUHxiYFah/cS3FPUHEeKi4Q+QNENbseJN3++uBeJAsF
+        Y5V/XpGgPhPo18yZpGOd+IoLfEpD8VGYrwBjKoqdEQnqSULxTpg1qT5St+VOAs39wLWvwKUPQPXtBOPr
+        dMQsIge+iGGGsgXkkM3NcbQMFvHSE0s7IH63CJMXis4LDRRLCndGAaL8ThwX0zIg0zJUJXBw9JoD5MR4
+        CyhN2XvGXdPv4DgmZEBIetLClR4TW5tjWHEzqvTltybG8xZyf+2YkoMNo0q4KhQFtoS2TyQhMwXEJyzs
+        ljd9snMMwZZR7Akl8SU1heOPU8rPfcb5ChwUfgv0UR8SPMJgIZEDal+bONqaQvdgHk9/5pT/2a88tt+L
+        Y/+jJC6+MVWcr0BAOCLQR03bI7rAkExhoCkmjCh77a1hpTc1jqhWtX2fQI3s6yzKAcE5bKXAvVXKsv28
+        mbRLF+jLAMtvRPEtXUBTbxbLrtt+atoDmYJ7ePAC12wHv5iHVwv0UdMOCtyXf6MLfB4HNjbG0D6QU1+8
+        ocG+yRp9kxq5iSQYJ86eh7FkKdeVID9eF3g/Cpx7bmLfwyS23Y2p/0B/14+c4lhbigm2HK7l2rkB2+Lc
+        YJ226c8I7qC9igPdUQs77ifVq+mV17MzlECwdRSnusaUPyz7doIS9niuf8DXpJ+sFAgPQ9ERsXA6bGJ9
+        QwxV8k+oaXcMWQiP2DHq1q7wMPacvjKviCIJT4ZQSsSm3aMdfAW8c8C2+OaAwoSF4grbwF7PMcmLl9VC
+        o9YeMYx/gs/DJeFbgiUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="Trayline_CheckConnectivity" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAppJREFUSEutlWtIk1EcxhdE1Me+GDTLC1q6MjNKo5tFJFu0hqk107yUly40xZFE
+        UBFluVsfKoPVMjXTtTK00FBCu0h+qRDsQ6QgjaKCoC+VRtHTOWfv3+aru9UeeBjnv3N+P/a+430VNReu
+        IZgq/jVy0Mk6q6h8Lm0PPQSg7HRFilLCJrDZm0VJQOuwCagkkM+l7aGHAGPj46IkoPXZi/UkmS0dCS0k
+        oJCA4mhtJ8Fp1jnSseATSDA86vb+FUFVQntCQ4pcwPP23QfUOztQW9cwBSYvZ243qbDVFA3D+cMISiCP
+        +/3HCaB3vv/4ikJ7GiofrsWJFxlMEhVega2rEmXtK2AdzUJ1fzp05iW+BaGUX5bMhvnY3ZQA04gO597o
+        sKV2nude/K+AM7JblciwRMD4eD1qXm9D8e0kFFsz/Qv8hS4RP8/Xx1x67LubjFOv1DjQtRIljnUeOE8w
+        gvGfY+gZuoWB4W6x9hbcf3kd+S2JOD64GdXPNkBjUWLk01BoAuONbOgb45HtiEW5reDvYRZ1rRIVfWk4
+        +jwdec2Lsd9WOOn7gAK+R21agKr+1TD0pUJjWjgB2GFOQdEdFYwDa1DgSkSOOW0ynCcYQa5lI4raVDA8
+        TYW+KY79QyKMrGd2Ncah4skqlHYm89kX1igB9U4gAX9M8H3aS5E42JuC0gdJHPaZ9Vd5zzIc6l2OrKvR
+        fJYngPKQwN/7gO9jgEf5rkUo616Kkk6V+OTNaYjhcKeATRcSUEkgnzOIRlunxN7OBE+7EqBvjeVzN+tc
+        CTc1BPD1PvASzGAd1DtjUHAvHns6xL34zbpJQk0fAlCPXKkSlc/5XgbL1V5mj4S2GOjsSi6wCYi/yEG+
+        yvcy4EzWZtZvrDdZZwmIzygUfwB7gVXQWymgzgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="Trayline_Create" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAfRJREFUSEutlT1IQlEUxx8EUdCcPnVpamlqiaCWQJLUPtGhraGppYIKJIiI14dY
+        0BdapiUJZhRU0NLQ5NTS0lKBon3uBWUEp3tv99R7z/Q9zT/8OJ5zzz3/9/RdnyCthEAPQqlSD5pa9zHU
+        dd5evHAAyr1vYaDKZrC4EWWgAeZlM0DQQF3n7cULB7y9vzPQAPPZ1TCaVPEtxQkNUGiA2oodocEMoZpv
+        0y8tg9tURn4XRaNpQJW+f4Lw3jHMr+/kDNBCl4FamYfnnwH5hOv/NfCQtEYGzZlwbl4DnVQQJMILj5UE
+        tlYOgxb6kLjjls+5m04gMcueGiK6pmlQSPQr4rMEV8wM3mQvuGIWxWEs1YBdtVx9UTPMXjuhL2r6+7Tr
+        MUjdPcLu4amHb1GoN2KC6Ssb9ETMpRkk0/d40Cq7QyapO2zKEkDO5GWbIufQPknTYDt+wtbpxXQGxexo
+        ohkmLlphnCP/jDllhPR1BcUXTQP8m6AGzoAoOf3GrCMggsMvAslJNMJwoonljoCR8F13+sUPwu8dlPo+
+        sK8ZYei8EexrYuHfAEEDdZ2356hj2QCDZw1AIy8phQPyvQ+0DGxLBhg4rQcaeUkpHICMbY4y1HXenqN2
+        n+Gz/6AOSPw5yQqpB+WDt+fI6jVIVm/tq3WhVuIlmQThC3hIUvRTkU3kAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="Trayline_Delete" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAipJREFUSEvFVU1LW0EUdVU1G22NuLC4i7oQEkPd6F6rBERa1KCS+BMUum6hKAq6
+        MdpiqVGxoC20aqHVRfsD2iwEX2PTpCQkfrtzpbvrvTdzY3x5j5cnggcOM3PvmXPyZghTMjazAMWw5LbQ
+        G72cm2Lq60puH2Ig6P30mCm4s4Dp+Q9MCZD1nQUIJUBfV3L7EIOLy0umBMh6PBSWkDK1xR4kQCABgver
+        GxLwGlmuthUPq4BEKpP/FbZpGUBIHxxDeG0TJuaWCgysWFSAHpnDk5yBGaR/fwFmVFfHMOoLlcT8ko1I
+        +t1Xk/Cr0gnawDCvjTSaPwBadTVoqLV9RLu4MTM0BHGvF3Z8z1T1GjtdPdzLDA6C9vCR/YBIbwDibjfs
+        B4M8RnzPVQd7nWie1/vdFywuILV/BCufv7GOjuCtuwP+NTVB2u/nMdTsg1lPV7bW38/jG/fT7D1YBSTT
+        Bzf+aLwJ8bP5CcQaGyHV3Q2J1lYmzan2A3tKZh2w+PGrmE+pLQzN4ShFfk+0tECyvZ1Jc6ohHyiZdUDe
+        r3eoLQwyQW7Scfxva2PSHGvrhgF23gMx36uthbjHA7H6eoi5XDyn2o0QMRBKgL7OYoQyX4/W1ECsoQFo
+        xPUWUVf7QtpcgNl7YBCwHK2qgr91dUCjMqf7KENu63oLBV/w4t0oU19X/hRwFnU64U9FhZjnHiKaI7ep
+        RxqcnxYEmFF5kMko8hy5iix45bBWjlzLahwjVyZ2qEbe//LBAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="Trayline_Edit" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAitJREFUSEtjaJ009z8xmIFcgG5Q/dQeMEYXhyonHcAMgIGwVTJgDANUs6B35hIw
+        hlkA41PNAhiGWYAuDlVOOoAZ8P3HDzCGWQDjt02eB7OEA6qFNACzAAZgFsDAnOUbYBY0AzEnVBvxgJAF
+        t+8/QvYFyZigBSDw8Mnz//NWbPzfMXUBhgGEMFEWoINHT1/ADcAG9s/s/L8y2eH/s+uXqG9Ba2nO/6Zo
+        t//HZtT+Xx2uj9sCUjEoPndOL/nv7uH8397N/X9niu//VTGG1LEAZPixNZ3/L03Q/39qWvh/D0+IJUWe
+        ZtQJov2rOv9fnqjz//3Jsv9Xp1v8X5UgDvZJZUEuZRaAXL5jOdDwfo3/74/l/n+6xuz/hW7W/ytSmf+v
+        mFAMyf3EWHD/8bP/i9duhbsaZnh4ReX/y33K/98fTgQabgo2fGUa8/+wsjKI4SBAyIJ7D59gZDSQPrDh
+        PXL/3+8PQTF8VmUIwnAQIGTB/JWbYAb3QLUw7Ehmq7zcLfH//W43FMM3xrPVQJUgACELkFzPBVIPNrxL
+        +P/77Zb/n64mYDgIwCwgpj4AG97B///9Fl2g4SaEDQcBmAEwDLMAXRyktjHU6e/cXBuI4V1EGA4CMANw
+        1Qcww2uD3Zyn5cX8bwl3/j01wQBs+KYEAoaDAMwCGC6dVQTGyGIgdSX+Lkc2dxT8n5AU9L8u2OUfUYaD
+        ALJBuDBInZez4/9CP+eHQJ+ELo2TEgNrJggYGABQeozYwRrs1QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="Trayline_Generate_Segments" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAcFJREFUSEtjaJ009z8xmIFcgG5Q/dQeMEYXhyonHcAMgIGwVTJgDANUs6B35hIw
+        hlkA41PNAhiGWYAuDlVOOoAZ8P3HDzCGWQDjt02eB7OEA6qFNACzAAZgFsDAnOUbYBY0AzEnVBvxgJAF
+        t+8/QvYFyZigBSDw8Mnz//NWbPzfMXUBhgGEMFEWoINHT1/ADcAFYPIDZwGlmKoWQNMLGMDECFqAD6AH
+        EcjgWfsbwTRYAAhg8lSzwLVD7H/P1ny4b2DyRFlw//EzlGDABkAWJK3R/1+3JhZVLSEL7j18As5oUOVg
+        g7Dh+JU6/1uuef9PXK37v3hpAMISQhbMX7kJ4lUoABlWd8Hlf+1Fl/91YOwKYUPFaoH8hNU6IEvPA7EE
+        QQuQigkumAXlp2yB2O5/GQiftvtffhrEh2IgGyQet1ILZMluuAXE1gcgCwoOm/0vOGIOpaFsGD5s/j9y
+        iSrI8IsoPoBhmAXo4lDzccZByDzF/5l7Df6HLVAC8Q8CsQBYA8wAXPUBugW4AMiSoLnyIMM3AjGiWIcZ
+        AMOls4rAGF0cqhwnAFkAxPOBmAUqBAHoBuHCUOU4AdDgbiBmhHKhgIEBAICrkrV++DKyAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="Trayline_Move" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAZtJREFUSEvFlTtLA0EUhSdgYR4IAe0EC0v9CdoFFCur/ARrEQS7FKJYaKMEjGgU
+        FHyAoIK/RjAkxkelpWlkvGecs9lMspndEPDAx+TO3D1nc5dk1db+iY6DGlSuUam8a3D3bXty0YAq3kwa
+        qKEF7FUuDAxgPbQAwgB337YnFw2+Wy0DA1hvH1QZMmovSSYGUAygji/vGLAppO1l8eULeKo1wt8iMd4A
+        qN5819Wre71TPusy8BErwFXj9SMwiBLP/y8gDvYxqulCNvjMs6EFzBbHdCql9IysJiGkvgH9xBHBJJ/P
+        Y9V27dagAfZyqrc5FCeg9vKmz28fo02cgJXVjXbtC3iuN80PzbarwtKyTmcyblhHjXP0mcIXcHr9EMxb
+        VBF+BNQ+0FfxBoT+JjJyQU4oCZ/CopAVxgUYTtga+18C+nJBQIL3wYgwJ0yZSikE4xzmEPbnBfS1R0QY
+        4O6b5m7BbEHAOe6coW3RIOp94AnAN8G4cI6x4M47RQOyfrRmcPdtuyuMAbPGA8X6N5awXKMobHsv4cEf
+        2tWRUr897fZFnSgH2QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="IsoStylesPicker" xml:space="preserve">
+    <value>Isometric Styles</value>
+  </data>
+  <data name="PleaseWaitImporting" xml:space="preserve">
+    <value>Importing Instances, Please Wait...</value>
+  </data>
+</root>

@@ -1,0 +1,283 @@
+<?xml version="1.0" ?>
+<BuildContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\bsicommon\build\PartFile.xsd">
+    
+    <Part Name="Configurationmanager" BMakeFile="ConfigurationManager\ConfigurationManager.mke">
+        <Bindings>
+            <Libs>
+                Delivery\bentley.plant.configurationmanager.lib
+            </Libs>
+            <Files ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.plant.configurationmanager.dll
+            </Files>
+        </Bindings>
+    </Part>
+
+    <Part Name="JspaceConnection" BMakeFile="connection\Connection.mke">
+        <SubPart PartName="tfapi"       PartFile="Triforma"         Repository="Triforma"/>
+        <Bindings>
+            <Libs>
+                Delivery\bentley.jspace.connection.lib
+            </Libs>
+            <Files ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.jspace.connection.dll
+            </Files>
+        </Bindings>
+    </Part>
+
+    <Part Name="JspaceConnectionECXDGNProvider" BMakeFile="connection\ecxdgnprovider\ECXDGNProvider.mke">
+        <!--SubPart PartName="JspaceConnectionInterfaces" />
+        <SubPart PartName="tfapi"       PartFile="Triforma"         Repository="Triforma" /-->
+        <Bindings>
+            <Libs>
+                Delivery\bentley.jspace.connection.ecxdgnprovider.lib
+            </Libs>
+            <Files ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.jspace.connection.ecxdgnprovider.dll
+            </Files>
+        </Bindings>
+    </Part>
+
+    <Part Name="JspaceConnectionInterfaces" BMakeFile="connection\interfaces\Interfaces.mke">
+        <Bindings>
+            <Libs>
+                Delivery\bentley.jspace.connection.interfaces.lib
+            </Libs>
+            <Files ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.jspace.connection.interfaces.dll
+            </Files>
+        </Bindings>
+    </Part>
+
+    <Part Name="JspaceConnectionJPublisher" BMakeFile="connection\jpublisher\jpublisher.mke">
+        <SubPart PartName="JspaceConnectionInterfaces" />
+        <Bindings>
+            <Libs>
+                Delivery\bentley.jspace.connection.jpublisher.lib
+            </Libs>
+            <Files ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.jspace.connection.jpublisher.dll
+            </Files>
+        </Bindings>
+    </Part>
+
+    <Part Name="JspacePersistenceStrategyTests" BMakeFile="connection\nunitatps\Test.mke">
+        <Bindings>
+            <Libs>
+                Delivery\bentley.publishdgn.jspacepersistencestrategy.tests.lib
+            </Libs>
+            <Files ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.publishdgn.jspacepersistencestrategy.tests.dll
+            </Files>
+        </Bindings>
+    </Part>
+
+    <Part Name="JspaceConnectionWrapper" BMakeFile="connection\wrapper\Wrapper.mke">
+        <Bindings>
+            <Libs>
+                Delivery\bentley.jspace.connection.wrapper.lib
+            </Libs>
+            <Files ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.jspace.connection.wrapper.dll
+            </Files>
+        </Bindings>
+    </Part>
+
+    <Part Name="Globalization" BMakeFile="Globalization\Globalization.mke">
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\Bentley.Plant.Globalization.dll
+            </Assemblies>
+        </Bindings>
+    </Part>
+
+    <Part Name="PipelineManager" BMakeFile="PipelineManager\PipelineManager.mke">
+        <SubPart PartName="Globalization" />
+        <SubPart PartName="SpecReader" />
+        <SubPart PartName="Utilities" />
+        <SubPart PartName="SpecgridSelection" />    
+        <SubPart PartName="OpenPlant3DStress" />
+        <SubPart PartName="InstanceImporter"            PartFile="opcommontools"  Repository="opcommontools"/>        
+        <SubPart PartName="OPMCommon"                   PartFile="opm"            Repository="opm" />
+        <SubPart PartName="MechanicalApi"               PartFile="opm"            Repository="opm" />
+        <SubPart PartName="Components"                  PartFile="opm"            Repository="opm" />
+        <SubPart PartName="OpenPlantModelerExe"         PartFile="opm"            Repository="opm"/>        
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.plant.PipelineManager.dll
+                <TransKit SourceDirectory="Delivery\Transkit\bentley.plant.PipelineManager"/>
+            </Assemblies>
+        </Bindings>
+    </Part>
+
+    <Part Name="SpecgridSelection" BMakeFile="plant3d\src\specGrid\specGrid\specGridSelection.mke">
+        <SubPart PartName="Utilities" />
+        <SubPart PartName="SpecReader" />
+        <SubPart PartName="StandardPreferences" />
+        <SubPart PartName="OPMCommon"                       PartFile="opm"      Repository="opm" />
+        <SubPart PartName="MechanicalApi"                   PartFile="opm"      Repository="opm" />
+        <SubPart PartName="OpenPlantModelerExe"             PartFile="opm"      Repository="opm"/>
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.plant.specgridselection.dll
+                <TransKit SourceDirectory="Delivery\Transkit\bentley.plant.specgridselection"/>
+            </Assemblies>
+        </Bindings>
+    </Part>
+
+    <!-- <Part Name="AreaBrowser" BMakeFile="PlantAreaBrowser\PlantAreaBrowser.mke">
+        <SubPart PartName="SpecReader" />
+        <SubPart PartName="Utilities" />
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.plant.plantareabrowser.dll
+                <TransKit SourceDirectory="Delivery\Transkit\bentley.plant.plantareabrowser"/>
+            </Assemblies>
+        </Bindings>
+    </Part> -->
+
+   <!-- OPPA - SpecGen usin it -->
+    <Part Name="ProjectUtilities" BMakeFile="ProjectUtilities\ProjectUtilities.mke">
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\Bentley.Plant.ProjectUtilities.dll
+            </Assemblies>
+        </Bindings>
+    </Part> 
+
+    <Part Name="SpecReader" BMakeFile="specReader\specReader\specReader.mke">
+        <SubPart PartName="OpenPlantModelerExe"                PartFile="opm"        Repository="opm"/>
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\Bentley.Plant.SpecReader.dll
+                <TransKit SourceDirectory="Delivery\Transkit\Bentley.Plant.SpecReader"/>
+            </Assemblies>
+        </Bindings>
+    </Part>
+
+    <Part Name="StandardPreferences" BMakeFile="StandardPreferences\StandardPreferences.mke">
+        <SubPart PartName="C1Binaries" />
+        <SubPart PartName="Globalization" />
+        <SubPart PartName="SpecReader" />
+        <SubPart PartName="Utilities" />
+        <SubPart PartName="OPMCommon"                   PartFile="opm"      Repository="opm" />
+        <SubPart PartName="MechanicalApi"               PartFile="opm"      Repository="opm" />
+        <SubPart PartName="Interfaces"                  PartFile="opm"      Repository="opm" />
+        <SubPart PartName="OPEF"                        PartFile="OPEF"     Repository="OPEF" />
+        <SubPart PartName="OpenPlantModelerExe"         PartFile="opm"      Repository="opm"/>
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.plant.standardpreferences.dll
+                <TransKit SourceDirectory="Delivery\Transkit\bentley.plant.standardpreferences"/>
+            </Assemblies>
+        </Bindings>
+    </Part>
+
+    <Part Name="OpenPlant3DStress" BMakeFile="Stress\stress.mke">
+        <SubPart PartName="Utilities" />
+        <SubPart PartName="SpecReader" />
+        <SubPart PartName="AutoplantECtoAP"                 PartFile="spectools"                Repository="spectools" />
+        <SubPart PartName="PlantiModelECPlugin"             PartFile="ecplugins"                Repository="ecplugins" />
+        <SubPart PartName="opcommontools"                   PartFile="opcommontools"            Repository="opcommontools" />
+        <SubPart PartName="MechanicalApi"                             PartFile="opm"                      Repository="opm" />
+        <SubPart PartName="Components"                      PartFile="opm"                      Repository="opm" />
+		<SubPart PartName="EquipmentNozzlemanager" PartFile="opm" Repository="opm" />
+        <!--<SubPart PartName="OpmsCommon"                      PartFile="Opms"                     Repository="opms" /> 
+        <SubPart PartName="OpenPlantSDKECModel"             PartFile="OpenPlantSDK"             Repository="OpenPlantSDK" />-->
+        <Bindings>
+            
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.openplant3d.stress.dll
+            </Assemblies>
+            <Files ProductDirectoryName="StressSchemas">
+                Delivery\*.ecschema.xml
+            </Files>	
+        </Bindings>
+    </Part>
+
+    <Part Name="TypeConverters" BMakeFile="TypeConverters\TypeConverters.mke">
+        <SubPart PartName="SpecReader" />
+        <SubPart PartName="Utilities" />
+        <SubPart PartName="OPMCommon"       PartFile="opm"      Repository="opm" />
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.plant.typeconverters.dll
+            </Assemblies>
+        </Bindings>
+    </Part>
+	
+    <Part Name="ObjectListView" BMakeFile="privmki\GetObjectListView.mke">
+        <RequiredRepository>plantbin-ObjectListView</RequiredRepository>  
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\BrightIdeasSoftware.ObjectListView.dll
+            </Assemblies>
+        </Bindings>
+    </Part>
+    
+    <Part Name="C1Binaries" BMakeFile="privmki\GetC1Binaries.mke">
+        <RequiredRepository>bepo-C1Binaries</RequiredRepository>  
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\c1.common.dll
+            </Assemblies>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\c1.win.c1flexgrid.dll
+            </Assemblies>
+        </Bindings>
+    </Part>
+
+    <Part Name="Utilities" BMakeFile="Utilities\Utilities.mke">
+        <SubPart PartName="PowerPlatform"                       PartFile="PowerPlatform"  Repository="MstnPlatform" />
+        <SubPart PartName="SpecReader" />
+        <SubPart PartName="ObjectListView" />
+        <SubPart PartName="PlantiModelECPlugin"                 PartFile="ecplugins"      Repository="ecplugins" />
+        <SubPart PartName="opcommontools"                       PartFile="opcommontools"  Repository="opcommontools" />
+        <SubPart PartName="BIMAdapter"                          PartFile="opcommontools"  Repository="opcommontools" />
+        <SubPart PartName="OPMCommon"                           PartFile="opm"            Repository="opm" />
+        <SubPart PartName="XDbProvider"                         PartFile="spectools"      Repository="spectools" />
+        <SubPart PartName="OpenPlantCore"                       PartFile="OpenPlantCore"  Repository="OpenPlantCore" />
+        <SubPart PartName="OpenPlantModelerExe"                 PartFile="opm"            Repository="opm"/>
+        <!--<SubPart PartName="Interfaces"                      PartFile="opm"    Repository="opm" />
+        <SubPart PartName="OpmsClientCommon"                    PartFile="Opms"   Repository="opms" />
+        <SubPart PartName="OpmsCommon"                          PartFile="Opms"   Repository="opms" />-->
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\bentley.plant.utilities.dll
+                <TransKit SourceDirectory="Delivery\Transkit\bentley.plant.utilities"/>
+            </Assemblies>
+        </Bindings>
+    </Part>
+
+<!--    <Part Name="XDbProvider" BMakeFile="..\spectools\XDbProvider\XDbProvider.mke">
+        <Bindings>
+            <Assemblies ProductDirectoryName="OPMAssemblies">
+                Delivery\Bentley.Data.XDb.Provider.dll
+            </Assemblies>
+        </Bindings>
+    </Part> -->
+
+    <Part Name="PlantUtil">
+        <SubPart PartName="PowerPlatform" PartFile="PowerPlatform" Repository="MstnPlatform" />
+        <!-- <SubPart PartName="JspaceConnection" /> -->
+        <!--SubPart PartName="JspaceConnectionECXDGNProvider" /-->
+        <!-- <SubPart PartName="JspaceConnectionInterfaces" /> -->
+        <!-- <SubPart PartName="JspaceConnectionJPublisher" /> -->
+        <!-- <SubPart PartName="JspacePersistenceStrategyTests" /> -->
+        <!-- <SubPart PartName="JspaceConnectionWrapper" /> -->
+        <!-- <SubPart PartName="OpenPlant3DStress" /> -->
+        <!-- <SubPart PartName="Configurationmanager" /> -->
+        <SubPart PartName="Globalization" /> 
+        <SubPart PartName="ObjectListView" /> 
+        <SubPart PartName="XDbProvider"                         PartFile="spectools"                Repository="spectools" /> 
+<!--        <SubPart PartName="spectools"                           PartFile="spectools"                Repository="spectools" /> -->
+        <SubPart PartName="Utilities" />
+        <SubPart PartName="StandardPreferences" />
+        <SubPart PartName="SpecgridSelection" />
+       <!-- <SubPart PartName="AreaBrowser" /> -->
+        <!-- <SubPart PartName="ProjectUtilities" /> --> <!--Removing SpecGen: No one needs it -->
+        <SubPart PartName="SpecReader" />
+        <SubPart PartName="TypeConverters" />
+        <SubPart PartName="PipelineManager" />
+    </Part>
+
+</BuildContext>

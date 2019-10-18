@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BuildContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\bsicommon\build\PartFile.xsd">
+    <Part Name="IDE" BMakeFile="privmki\openOPCTIDE.mke"/>
+    <Part Name="opcommontoolsLogging" BMakeFile="Logging\Logging.mke">
+         <SubPart PartName="LoggingSDK"  PartFile="LoggingSDK"                           Repository="loggingsdk" /> 
+        <Bindings>
+            <Assemblies ProductDirectoryName="PowerProductName">
+                Delivery\Bentley.Plant.CommonToolsLogging.dll
+                <TransKit SourceDirectory="Delivery\Transkit\Bentley.Plant.CommonToolsLogging"/>
+            </Assemblies>
+        </Bindings>
+    </Part>
+    
+    <Part Name="BimAdapterNative" BMakeFile="BimAdapterNative\BimAdapterNative.mke">
+        <SubPart PartName="cmfcore"               PartFile="cmf"                        Repository="cmf"/>
+        <SubPart PartName="PSolid"                PartFile="PowerPlatform"              Repository="MstnPlatform"/>
+        <SubPart PartName="iModel02SDK"           PartFile="SdkDistribution"            Repository="SdkDistribution"/>
+        <SubPart PartName="OPBimClientRunTimes"   PartFile="OPBimClient"                Repository="OPBimClient" />
+        <Bindings>
+            <Assemblies ProductDirectoryName="PowerProductName">
+                Delivery\BimAdapterNative.dll
+            </Assemblies>
+        </Bindings>
+    </Part>
+    
+    <Part Name="ModelSync">
+        <SubPart PartName="Differencing"                    PartFile="ModelSync"                            Repository="ModelSync"/>
+        <SubPart PartName="DesignSyncControls"              PartFile="ModelSync"                            Repository="ModelSync"/>
+    </Part>
+    
+    <Part Name="BIMAdapter" BMakeFile="BIMAdapter\BIMAdapter.mke">
+        <SubPart PartName="BimAdapterNative" />
+		<SubPart PartName="OPConfigVariable" />
+        <SubPart PartName="OPCommonTools" />
+        <SubPart PartName="ModelSync" />
+        <SubPart PartName="PersistenceClient"                   PartFile="OpBimClient"        Repository="OpBimClient"/>
+        <SubPart PartName="PlantDomainInteropCodeVancouver"     PartFile="PlantDomain"        Repository="DgnDomains-Plant"/>
+        <SubPart PartName="PlantiModelECPlugin"                 PartFile="ecplugins"          Repository="ecplugins" />
+        <SubPart PartName="ECObjectsManaged"                    PartFile="ecf"                Repository="ecf"/>
+        <SubPart PartName="ECServices"                          PartFile="ecf"                Repository="ecf"/>
+        <SubPart PartName="OPBimClientRunTimes"                 PartFile="OPBimClient"        Repository="OPBimClient" />
+		<SubPart PartName="Utilities"    	                    PartFile="openplantcore"      Repository="openplantcore" />
+        <Bindings>
+            <Assemblies ProductDirectoryName="PowerProductName">
+                Delivery\Bentley.Plant.CommonTools.BIMAdapter.dll
+                <TransKit SourceDirectory="Delivery\Transkit\Bentley.Plant.CommonTools.BIMAdapter"/>
+            </Assemblies>
+            <Files ProductDirectoryName="PowerProductName">
+                Delivery\Bentley.Plant.CommonTools.BIMAdapter.dll.config
+            </Files>
+        </Bindings>
+    </Part>
+    
+    <Part Name="BIMWBSTree" BMakeFile="BIMWBSTree\Bentley.Plant.CommonTools.BIMWBSTree.mke" >
+        <SubPart PartName="BIMAdapter" />
+        <SubPart PartName="ClrApp-ECUISupport"    PartFile="PowerPlatform"              Repository="MstnPlatform"/>
+        <Bindings>
+            <Assemblies ProductDirectoryName="PowerProductName">
+                Delivery\Bentley.Plant.CommonTools.BIMWBSTree.dll
+            </Assemblies>
+        </Bindings>
+    </Part>
+	
+	<Part Name="BIMWBSTreeForOPOM" BMakeFile="BIMWBSTree\Bentley.Plant.CommonTools.BIMWBSTree.mke" BMakeOptions="+dDefinedConstants=OPOM">
+        <SubPart PartName="BIMAdapter" />
+        <SubPart PartName="ClrApp-ECUISupport"    PartFile="PowerPlatform"              Repository="MstnPlatform"/>
+        <Bindings>
+            <Assemblies ProductDirectoryName="PowerProductName">
+                Delivery\Bentley.Plant.CommonTools.BIMWBSTree.dll
+            </Assemblies>
+        </Bindings>
+    </Part>
+    
+    <Part Name="TagBrowser" BMakeFile="TagBrowser\TagBrowser.mke">
+        <!-- <SubPart PartName="PowerPlatform"       PartFile="PowerPlatform"        Repository="MstnPlatform" /> -->
+        <SubPart PartName="TelerikWinForms"         PartFile="TelerikWinForms"      Repository="TelerikWinForms" />
+        <SubPart PartName="ECObjectsManaged"        PartFile="ecf"               Repository="ecf"/>
+        <SubPart PartName="ECServices"              PartFile="ecf"               Repository="ecf"/>
+        <SubPart PartName="ECWinFormControls"       PartFile="ECF"               Repository="ECF" />
+        <SubPart PartName="OPConfigVariable" />        
+        <Bindings>
+            <Assemblies ProductDirectoryName="PowerProductName">
+                Delivery\Bentley.Plant.TagBrowser.dll
+                <TransKit SourceDirectory="Delivery\Transkit\Bentley.Plant.TagBrowser"/>
+            </Assemblies>
+        </Bindings>
+    </Part>
+
+    <Part Name="OPCommonAutomationFiles" BMakeFile="OPAutomation\OPCommonAutomationFiles.prewire.mke">
+        <SubPart PartName="PPTestRunner" />
+        <SubPart PartName="pptestrunnerdriver" />
+        <SubPart PartName="dgncompareconnect" />
+        <Bindings>
+        <Assemblies ProductDirectoryName="Automation">
+            Automation\*.dll
+            Automation\*.exe
+        </Assemblies>
+        </Bindings>
+    </Part>
+    
+    <Part Name="PPTestRunner" BMakeFile="OPAutomation\PPTestRunner\PPTestRunner\PPTestRunner.mke">   
+        <!-- <SubPart PartName="Ustation"              PartFile="PowerPlatform"              Repository="MstnPlatform"/> -->
+        <SubPart PartName="PowerPlatformMain"       PartFile="PowerPlatform"        Repository="MstnPlatform" />
+        <!--<Bindings>
+            <Assemblies ProductDirectoryName="Automation">
+                Delivery\Bentley.Automation.Common.PPTestRunner.dll
+            </Assemblies>
+        </Bindings> -->
+    </Part>
+
+    <Part Name="PPTestRunnerDriver" BMakeFile="OPAutomation\PPTestRunnerDriver\PPTestRunnerDriver\PPTestRunnerDriver.mke">   
+        <!-- <SubPart PartName="Ustation"              PartFile="PowerPlatform"              Repository="MstnPlatform"/> -->
+        <SubPart PartName="PowerPlatformMain"       PartFile="PowerPlatform"        Repository="MstnPlatform" />
+        <!--<Bindings>
+            <Assemblies ProductDirectoryName="Automation">
+                Delivery\Bentley.Automation.Common.PPTestRunnerDriver.exe
+            </Assemblies>
+        </Bindings>-->
+    </Part>
+
+    <Part Name="DgnCompareConnect" BMakeFile="OPAutomation\DgnCompareConnect\DgnCompareConnect.mke">   
+        <!-- <SubPart PartName="Ustation"              PartFile="PowerPlatform"              Repository="MstnPlatform"/> -->
+        <SubPart PartName="PowerPlatformMain"       PartFile="PowerPlatform"        Repository="MstnPlatform" />
+        <!--<Bindings>
+            <Assemblies ProductDirectoryName="Automation">
+                Delivery\Bentley.Automation.Common.DgnCompareConnect.dll
+            </Assemblies>
+        </Bindings>-->
+    </Part>
+
+    <Part Name="OPConfigVariable" BMakeFile="ConfigVariable/ConfigVariable.mke"> 
+		<SubPart PartName="PowerPlatformMain"       PartFile="PowerPlatform"        Repository="MstnPlatform" />
+        <Bindings>
+            <Assemblies ProductDirectoryName="PowerProductName">
+                Delivery\Bentley.Plant.ConfigVariable.dll
+            </Assemblies>
+        </Bindings>
+    </Part>
+
+    <Part Name="OPPropertyEnabler" BMakeFile="PropertyEnabler/OPPropertyEnabler.mke"> 
+        <SubPart PartName="XDbProvider"  PartFile="spectools"     Repository="spectools"/>
+        <SubPart PartName="OPConfigVariable" />
+		<SubPart PartName="opcommontoolsLogging" />
+        <Bindings>
+            <Assemblies ProductDirectoryName="PowerProductName">
+                Delivery\Bentley.Plant.OPPropertyEnabler.dll
+                <TransKit SourceDirectory="Delivery\Transkit\Bentley.Plant.OPPropertyEnabler"/>
+            </Assemblies>
+        </Bindings>
+    </Part>
+
+    <Part Name="OPECUtility" BMakeFile="ECUtility/ECUtility.mke"> 
+        <Bindings>
+            <Assemblies ProductDirectoryName="PowerProductName">
+                Delivery\Bentley.Plant.ECUtility.dll
+            </Assemblies>
+        </Bindings>
+    </Part>
+    
+    <Part Name="InstanceImporter" BMakeFile="InstanceImporter/InstanceImporter.mke"> 
+        <SubPart PartName="XDbProvider"  PartFile="spectools"     Repository="spectools"/>
+        <SubPart PartName="ECObjectsManaged"        PartFile="ecf"               Repository="ecf"/>
+        <SubPart PartName="ECServices"              PartFile="ecf"               Repository="ecf"/>        
+        <Bindings>
+            <Assemblies ProductDirectoryName="PowerProductName">
+                Delivery\Bentley.Plant.InstanceImporter.dll
+                <TransKit SourceDirectory="Delivery\Transkit\Bentley.Plant.InstanceImporter"/>
+            </Assemblies>
+        </Bindings>
+    </Part>    
+    
+    <Part Name="opcommontools" BMakeFile="commontools.mke">
+        <SubPart PartName="ECObjectsManaged"        PartFile="ecf"               Repository="ecf"/>
+        <SubPart PartName="ECServices"              PartFile="ecf"               Repository="ecf"/>
+        <SubPart PartName="ECWinFormControls"       PartFile="ECF"               Repository="ECF" />
+        <SubPart PartName="opcommontoolsLogging" />
+        <SubPart PartName="TagBrowser" /> 
+        <SubPart PartName="PPTestRunner" />
+        <SubPart PartName="pptestrunnerdriver" />
+        <SubPart PartName="dgncompareconnect" />
+        <SubPart PartName="OPCommonAutomationFiles" />
+        <SubPart PartName="OPConfigVariable" />
+        <SubPart PartName="OPECUtility" />
+        <SubPart PartName="OPPropertyEnabler" />
+        <SubPart PartName="InstanceImporter" />
+        <Bindings>
+            <Assemblies ProductDirectoryName="PowerProductName">
+                Delivery\Bentley.Plant.CommonTools.dll
+                <TransKit SourceDirectory="Delivery\Transkit\Bentley.Plant.CommonTools"/>
+            </Assemblies>
+        </Bindings>
+    </Part>
+</BuildContext>
