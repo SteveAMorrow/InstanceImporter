@@ -1,0 +1,64 @@
+#----------------------------------------------------------------------
+#
+#  $Copyright: (c) 2019 Bentley Systems, Incorporated. All rights reserved. $
+#
+#  Application Make File
+#
+#     $Source: InstanceImporter/InstanceImporter.mke $
+#
+#  "MicroStation" is a registered trademark and "MDL" and "MicroCSL"
+#  are trademarks of Bentley Systems, Inc.
+#
+#  Limited permission is hereby granted to reproduce and modify this
+#  copyrighted material provided that the resulting code is used only
+#  in conjunction with Bentley Systems products under the terms of the
+#  license agreement provided therein, and that this notice is retained
+#  in its entirety in any such reproduction or modification.
+#
+#----------------------------------------------------------------------
+appName     = Bentley.Plant.InstanceImporter
+dllName     = Bentley.Plant.InstanceImporter
+PolicyFile  = $(SrcRoot)openplant\opcommontools\privmki\AssertOPCommonToolsPolicy.mki
+%include    mdl.mki
+
+#--------------------------------------------------------------------------------------
+#     Output Directory                                                                 |
+#--------------------------------------------------------------------------------------
+o = $(opCommonToolsbuildDir)$(appName)/
+$(o)$(tstdir)   : $(o)$(tstdir)
+
+%include $(SrcRoot)openplant\opcommontools\privmki\OpCommonToolsBuildMacros.mki
+
+WhatToBuild=$(appName).csproj
+
+buildProject:
+    ~@mkdir $(o)
+    |[== Building $(WhatToBuild) ==]
+   $(MSBUILDEXE) $(_MakeFilePath)$(WhatToBuild)
+
+#----------------------------------------------------------------------
+#   Expose our transkit to the delivery directory
+#----------------------------------------------------------------------
+always:
+    @SymLinkResxTranskitFiles.py $(baseDir)transkit.xml $(o)\resx $(ContextDeliveryDir)Transkit\$(appName)
+
+   
+   
+#----------------------------------------------------------------------
+#   Versioning & Signing
+#----------------------------------------------------------------------
+ASSEMBLY_DESCRIPTION        =   $(appName)
+
+%include $(SrcBsiCommon)sharedmki/stdversion.mki
+%include signrscsdefs.mki
+
+
+always:
+	$(SrcBsiTools)winX86/InjectVersion.exe "$(o)/$(dllName).dll" $(STD_VERSION_OPTS) -k"ProductName=$(ASSEMBLY_PRODUCT_NAME)" -k"CompanyName=$(companyName)" -k"FileDescription=$(ASSEMBLY_DESCRIPTION)" -k"OriginalFilename=$(dllName).dll" 
+	$(signcodecmd) "$(o)/$(dllName).dll"
+
+ 
+
+      
+always:
+    @CreateSymLinks.py -f"$(ContextDeliveryDir)$(dllName).dll=$(opCommonToolsbuildDir)$(appName)/$(dllName).dll"
